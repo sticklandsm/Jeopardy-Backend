@@ -5,6 +5,7 @@ import fs from 'fs'
 dotenv.config()
 
 const sequelize = new Sequelize({
+  logging: false,
   dialect: 'mysql',
   dialectOptions: {
     ssl: { ca: process.env.CERT },
@@ -15,6 +16,16 @@ const sequelize = new Sequelize({
   password: process.env.SERVER_PASS,
   database: process.env.DATABASE,
 })
+
+// const sequelize = new Sequelize({
+//   logging: false,
+//   dialect: 'mysql',
+//   host: 'localhost',
+//   port: 3306,
+//   username: 'root',
+//   password: 'password',
+//   database: process.env.DATABASE,
+// })
 
 // Define the Game model
 const Game = sequelize.define('game', {

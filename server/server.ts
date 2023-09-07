@@ -6,6 +6,11 @@ import { getFullJeopardyGame, generateRandom } from './helpers'
 import fallbackJeopardyData from '../data/questions.json'
 import fallbackFinalJeopardyData from '../data/finalJeopardy.json'
 import { sequelize, Clue, Category, Player, Game } from './db/db'
+import {
+  CategoryWithoutCluesDB,
+  GameWithCategoriesNoCluesDB,
+} from '../interfaces/question'
+import { Model } from 'sequelize'
 
 const app = express()
 
@@ -25,23 +30,54 @@ app.get('/game/:gameId', async (req, res) => {
   const gameId = Number(req.params.gameId)
   // const test = await Clue.findAll();
   // console.log('SEAN: ', test);
-  const game = await Game.findByPk(gameId, {
-    include: [
-      {
-        model: Player,
-        attributes: ['name', 'score'],
-      },
-      {
-        model: Category,
-        attributes: ['category_name'],
-      },
-    ],
-  })
 
-  console.log('SEAN!!!!', game)
+  try {
+    const currentCategories = (await Category.findAll({
+      raw: true,
+      where: {
+        game_id: gameId,
+      },
+    })) as unknown as CategoryWithoutCluesDB[]
+
+    const categoriesWithClues = await Promise.all(
+      currentCategories.map(async (category) => {
+        const clues = await Clue.findAll({
+          raw: true,
+          attributes: [
+            'clue',
+            'value',
+            'daily_double',
+            'answer',
+            'has_been_answered',
+          ],
+          where: {
+            category_id: category.id,
+          },
+        })
+        return { category, clues }
+      })
+    )
+
+    const jeopardyRound = categoriesWithClues
+      .filter((category) => !category.category.double_jeopardy)
+      .map((category) => {
+        return { ...category, categoryName: category.category.category_name }
+      })
+
+    const doubleJeopardyRound = categoriesWithClues
+      .filter((category) => category.category.double_jeopardy)
+      .map((category) => {
+        return { ...category, categoryName: category.category.category_name }
+      })
+
+    res.json({ jeopardyRound, doubleJeopardyRound })
+  } catch (error) {
+    console.error(error)
+    res.status(500).json({ error: 'Database error' })
+  }
 })
 
-app.get('/', async (req, res) => {
+app.get('/newGame', async (req, res) => {
   const randomNum = generateRandom(360000)
 
   try {
@@ -113,7 +149,7 @@ app.get('/', async (req, res) => {
       })
     })
 
-    res.json({ ...fullGame, gameId: game_id })
+    res.json(game_id)
   } catch (error) {
     console.error(error)
     res.json(

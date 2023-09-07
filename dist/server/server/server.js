@@ -71,7 +71,6 @@ app.get('/game/:gameId', (req, res) => __awaiter(void 0, void 0, void 0, functio
             },
         ],
     });
-    console.log('SEAN!!!!', game);
 }));
 app.get('/', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const randomNum = (0, helpers_1.generateRandom)(360000);
