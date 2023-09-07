@@ -1,12 +1,20 @@
-import { Sequelize, DataTypes } from 'sequelize';
+import { Sequelize, DataTypes } from 'sequelize'
+import dotenv from 'dotenv'
+import fs from 'fs'
+
+dotenv.config()
 
 const sequelize = new Sequelize({
   dialect: 'mysql',
-  host: '127.0.0.1',
-  username: 'root',
-  password: 'password',
-  database: 'jeopardyDB',
-});
+  dialectOptions: {
+    ssl: { ca: process.env.CERT },
+  },
+  host: process.env.HOST,
+  port: Number(process.env.SERVER_PORT),
+  username: process.env.USER,
+  password: process.env.SERVER_PASS,
+  database: process.env.DATABASE,
+})
 
 // Define the Game model
 const Game = sequelize.define('game', {
@@ -16,7 +24,7 @@ const Game = sequelize.define('game', {
   status: {
     type: DataTypes.STRING,
   },
-});
+})
 
 // Define the Player model
 const Player = sequelize.define('player', {
@@ -27,7 +35,7 @@ const Player = sequelize.define('player', {
   score: {
     type: DataTypes.INTEGER,
   },
-});
+})
 
 // Define the Category model
 const Category = sequelize.define('category', {
@@ -37,7 +45,7 @@ const Category = sequelize.define('category', {
   double_jeopardy: {
     type: DataTypes.BOOLEAN,
   },
-});
+})
 
 // Define the Clue model
 const Clue = sequelize.define('clue', {
@@ -56,19 +64,19 @@ const Clue = sequelize.define('clue', {
   has_been_answered: {
     type: DataTypes.BOOLEAN,
   },
-});
+})
 
 // Associations
-Game.hasMany(Player, { foreignKey: 'game_id' });
-Player.belongsTo(Game, { foreignKey: 'game_id' });
+Game.hasMany(Player, { foreignKey: 'game_id' })
+Player.belongsTo(Game, { foreignKey: 'game_id' })
 
-Category.belongsTo(Game, { foreignKey: 'game_id' });
-Game.hasMany(Category, { foreignKey: 'game_id' });
+Category.belongsTo(Game, { foreignKey: 'game_id' })
+Game.hasMany(Category, { foreignKey: 'game_id' })
 
-Category.hasMany(Clue, { foreignKey: 'category_id' });
-Clue.belongsTo(Category, { foreignKey: 'category_id' });
+Category.hasMany(Clue, { foreignKey: 'category_id' })
+Clue.belongsTo(Category, { foreignKey: 'category_id' })
 
-sequelize.sync();
+sequelize.sync()
 
 // Export models and sequelize instance
-export { sequelize, Game, Player, Category, Clue };
+export { sequelize, Game, Player, Category, Clue }
