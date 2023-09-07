@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'JeopardyBackend'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FBF9EA5A76B8411DB22DF2F2D06B1A61 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_401EB402434842E097C6494DA4D0702C }}
           package: .
