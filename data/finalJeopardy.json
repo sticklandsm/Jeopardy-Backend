@@ -1,0 +1,1902 @@
+[
+	{
+		"id": 155240,
+		"answer": "Turkey",
+		"question": "Old maps used \"Natolia\" to denote the eastern part of what's now this country",
+		"value": null,
+		"airdate": "2013-04-12T19:00:00.000Z",
+		"created_at": "2022-12-30T20:42:59.750Z",
+		"updated_at": "2022-12-30T20:42:59.750Z",
+		"category_id": 18506,
+		"game_id": 4145,
+		"invalid_count": null,
+		"category": {
+			"id": 18506,
+			"title": "historical geographic akas",
+			"created_at": "2022-12-30T20:42:58.604Z",
+			"updated_at": "2022-12-30T20:42:58.604Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 132899,
+		"answer": "crosses",
+		"question": "Bram Stoker wrote in \"Dracula\", \"Further and further back he cowered as we...advanced\", holding these",
+		"value": null,
+		"airdate": "2010-07-15T19:00:00.000Z",
+		"created_at": "2022-12-30T20:12:00.808Z",
+		"updated_at": "2022-12-30T20:12:00.808Z",
+		"category_id": 15128,
+		"game_id": 3438,
+		"invalid_count": null,
+		"category": {
+			"id": 15128,
+			"title": "vampire weekend",
+			"created_at": "2022-12-30T20:11:59.326Z",
+			"updated_at": "2022-12-30T20:11:59.326Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 220024,
+		"answer": "a couch",
+		"question": "The name of this piece of furniture comes from the French for \"to put to bed\"",
+		"value": null,
+		"airdate": "2022-11-18T20:00:00.000Z",
+		"created_at": "2022-12-30T22:12:31.579Z",
+		"updated_at": "2022-12-30T22:12:31.579Z",
+		"category_id": 582,
+		"game_id": 7516,
+		"invalid_count": null,
+		"category": {
+			"id": 582,
+			"title": "furniture",
+			"created_at": "2022-12-30T18:39:10.176Z",
+			"updated_at": "2022-12-30T18:39:10.176Z",
+			"clues_count": 146
+		}
+	},
+	{
+		"id": 106438,
+		"answer": "Tulane",
+		"question": "Recovering from Katrina, it scheduled a makeup \"lagniappe semester\" starting in May 2006",
+		"value": null,
+		"airdate": "2006-05-31T19:00:00.000Z",
+		"created_at": "2022-12-30T19:35:20.236Z",
+		"updated_at": "2022-12-30T19:35:20.236Z",
+		"category_id": 11502,
+		"game_id": 986,
+		"invalid_count": null,
+		"category": {
+			"id": 11502,
+			"title": "u.s. colleges & universities",
+			"created_at": "2022-12-30T19:35:19.432Z",
+			"updated_at": "2022-12-30T19:35:19.432Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 74313,
+		"answer": "Marion Barry",
+		"question": "In a 1992 exclusive, BET aired this ex-mayor's first interview since his imprisonment",
+		"value": null,
+		"airdate": "2001-02-20T20:00:00.000Z",
+		"created_at": "2022-12-30T19:10:22.491Z",
+		"updated_at": "2022-12-30T19:10:22.491Z",
+		"category_id": 7178,
+		"game_id": 1595,
+		"invalid_count": null,
+		"category": {
+			"id": 7178,
+			"title": "bet",
+			"created_at": "2022-12-30T19:10:22.297Z",
+			"updated_at": "2022-12-30T19:10:22.297Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 186370,
+		"answer": "the Susan G. Komen Foundation",
+		"question": "Named in memory of Nancy Brinker's sister: \"To save lives and end breast cancer forever\"",
+		"value": null,
+		"airdate": "2016-09-14T19:00:00.000Z",
+		"created_at": "2022-12-30T21:26:47.346Z",
+		"updated_at": "2022-12-30T21:26:47.346Z",
+		"category_id": 23100,
+		"game_id": 5405,
+		"invalid_count": null,
+		"category": {
+			"id": 23100,
+			"title": "the organization's mission",
+			"created_at": "2022-12-30T21:26:45.691Z",
+			"updated_at": "2022-12-30T21:26:45.691Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 121155,
+		"answer": "Elizabeth I",
+		"question": "The state of Virginia was so named in her honor",
+		"value": null,
+		"airdate": "2008-04-08T19:00:00.000Z",
+		"created_at": "2022-12-30T19:56:00.276Z",
+		"updated_at": "2022-12-30T19:56:00.276Z",
+		"category_id": 71,
+		"game_id": 2411,
+		"invalid_count": null,
+		"category": {
+			"id": 71,
+			"title": "virginia",
+			"created_at": "2022-12-30T18:37:44.324Z",
+			"updated_at": "2022-12-30T18:37:44.324Z",
+			"clues_count": 20
+		}
+	},
+	{
+		"id": 180300,
+		"answer": "Berkeley",
+		"question": "Of the 10 University of California campuses, this one in northern California is alphabetically first",
+		"value": null,
+		"airdate": "2017-07-03T19:00:00.000Z",
+		"created_at": "2022-12-30T21:18:37.710Z",
+		"updated_at": "2022-12-30T21:18:37.710Z",
+		"category_id": 1331,
+		"game_id": 5711,
+		"invalid_count": null,
+		"category": {
+			"id": 1331,
+			"title": "colleges & universities",
+			"created_at": "2022-12-30T18:41:55.166Z",
+			"updated_at": "2022-12-30T18:41:55.166Z",
+			"clues_count": 249
+		}
+	},
+	{
+		"id": 70816,
+		"answer": "Henrik Ibsen",
+		"question": "The museum devoted to this playwright is a short walk from the National Theatre in Oslo",
+		"value": null,
+		"airdate": "1999-09-17T19:00:00.000Z",
+		"created_at": "2022-12-30T19:08:39.747Z",
+		"updated_at": "2022-12-30T19:08:39.747Z",
+		"category_id": 6018,
+		"game_id": 2043,
+		"invalid_count": null,
+		"category": {
+			"id": 6018,
+			"title": "literary tourism",
+			"created_at": "2022-12-30T19:06:23.597Z",
+			"updated_at": "2022-12-30T19:06:23.597Z",
+			"clues_count": 10
+		}
+	},
+	{
+		"id": 47244,
+		"answer": "Iraq or Syria",
+		"question": "1 of the 2 Mideast countries in which the Baath Party has held power for over 20 years",
+		"value": null,
+		"airdate": "1997-03-14T19:00:00.000Z",
+		"created_at": "2022-12-30T18:57:28.248Z",
+		"updated_at": "2022-12-30T18:57:28.248Z",
+		"category_id": 22,
+		"game_id": 1325,
+		"invalid_count": null,
+		"category": {
+			"id": 22,
+			"title": "history",
+			"created_at": "2022-12-30T18:37:38.727Z",
+			"updated_at": "2022-12-30T18:37:38.727Z",
+			"clues_count": 443
+		}
+	},
+	{
+		"id": 102851,
+		"answer": "Madison",
+		"question": "He was the first sitting president who could have sung \"The Star Spangled Banner\"",
+		"value": null,
+		"airdate": "2004-12-23T20:00:00.000Z",
+		"created_at": "2022-12-30T19:30:22.332Z",
+		"updated_at": "2022-12-30T19:30:22.332Z",
+		"category_id": 11010,
+		"game_id": 82,
+		"invalid_count": null,
+		"category": {
+			"id": 11010,
+			"title": "presidential puzzles",
+			"created_at": "2022-12-30T19:30:20.884Z",
+			"updated_at": "2022-12-30T19:30:20.884Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 126533,
+		"answer": "Atlantic",
+		"question": "In 1947, Ahmet Ertegun founded this jazz & R&B label, which soon had an \"ocean\" of talent, including Ray Charles",
+		"value": null,
+		"airdate": "2009-06-16T19:00:00.000Z",
+		"created_at": "2022-12-30T20:03:21.822Z",
+		"updated_at": "2022-12-30T20:03:21.822Z",
+		"category_id": 2368,
+		"game_id": 3057,
+		"invalid_count": null,
+		"category": {
+			"id": 2368,
+			"title": "record labels",
+			"created_at": "2022-12-30T18:48:05.983Z",
+			"updated_at": "2022-12-30T18:48:05.983Z",
+			"clues_count": 20
+		}
+	},
+	{
+		"id": 156227,
+		"answer": "(Jules) Verne",
+		"question": "Jacques Offenbach's 1875 operetta \"Le Voyage Dans la Lune\" was based on a novel by this man",
+		"value": null,
+		"airdate": "2013-02-26T20:00:00.000Z",
+		"created_at": "2022-12-30T20:44:22.625Z",
+		"updated_at": "2022-12-30T20:44:22.625Z",
+		"category_id": 18652,
+		"game_id": 4092,
+		"invalid_count": null,
+		"category": {
+			"id": 18652,
+			"title": "that 1870s show",
+			"created_at": "2022-12-30T20:44:21.388Z",
+			"updated_at": "2022-12-30T20:44:21.388Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 37251,
+		"answer": "Huron",
+		"question": "This is the second largest of the Great Lakes",
+		"value": null,
+		"airdate": "1995-05-25T19:00:00.000Z",
+		"created_at": "2022-12-30T18:53:02.856Z",
+		"updated_at": "2022-12-30T18:53:02.856Z",
+		"category_id": 763,
+		"game_id": 6813,
+		"invalid_count": null,
+		"category": {
+			"id": 763,
+			"title": "u.s.a.",
+			"created_at": "2022-12-30T18:39:43.725Z",
+			"updated_at": "2022-12-30T18:39:43.725Z",
+			"clues_count": 205
+		}
+	},
+	{
+		"id": 49258,
+		"answer": "Iwo Jima",
+		"question": "(VIDEO DAILY DOUBLE):Island on which the action depicted here took place: (the raising of the flag on Mount Suribachi)",
+		"value": null,
+		"airdate": "1996-12-05T20:00:00.000Z",
+		"created_at": "2022-12-30T18:58:23.212Z",
+		"updated_at": "2022-12-30T18:58:23.212Z",
+		"category_id": 3801,
+		"game_id": 586,
+		"invalid_count": null,
+		"category": {
+			"id": 3801,
+			"title": "the marine corps",
+			"created_at": "2022-12-30T18:58:23.008Z",
+			"updated_at": "2022-12-30T18:58:23.008Z",
+			"clues_count": 4
+		}
+	},
+	{
+		"id": 101766,
+		"answer": "fireflies",
+		"question": "Entomologist Thomas Eisner helped decipher the flash code used by the femmes fatales of these insects",
+		"value": null,
+		"airdate": "2005-02-11T20:00:00.000Z",
+		"created_at": "2022-12-30T19:28:52.359Z",
+		"updated_at": "2022-12-30T19:28:52.359Z",
+		"category_id": 10877,
+		"game_id": 146,
+		"invalid_count": null,
+		"category": {
+			"id": 10877,
+			"title": "20th century science tidbits",
+			"created_at": "2022-12-30T19:28:51.136Z",
+			"updated_at": "2022-12-30T19:28:51.136Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 43131,
+		"answer": "<i>How to Succeed in Business Without Really Trying</i>",
+		"question": "[VIDEO DAILY DOUBLE]Revival of a 1961 musical that has the following on its marquee:",
+		"value": null,
+		"airdate": "1995-11-09T20:00:00.000Z",
+		"created_at": "2022-12-30T18:55:37.910Z",
+		"updated_at": "2022-12-30T18:55:37.910Z",
+		"category_id": 270,
+		"game_id": 5391,
+		"invalid_count": null,
+		"category": {
+			"id": 270,
+			"title": "broadway",
+			"created_at": "2022-12-30T18:38:16.934Z",
+			"updated_at": "2022-12-30T18:38:16.934Z",
+			"clues_count": 30
+		}
+	},
+	{
+		"id": 60179,
+		"answer": "<i>Fiddler on the Roof</i>",
+		"question": "Rabbi,Fruma-Sarah,Grandma Tzeitel",
+		"value": null,
+		"airdate": "1999-03-23T19:00:00.000Z",
+		"created_at": "2022-12-30T19:03:31.863Z",
+		"updated_at": "2022-12-30T19:03:31.863Z",
+		"category_id": 5022,
+		"game_id": 2328,
+		"invalid_count": null,
+		"category": {
+			"id": 5022,
+			"title": "name the musical",
+			"created_at": "2022-12-30T19:02:56.621Z",
+			"updated_at": "2022-12-30T19:02:56.621Z",
+			"clues_count": 10
+		}
+	},
+	{
+		"id": 145388,
+		"answer": "the Oxygen Channel",
+		"question": "This cable channel launched on Feb. 2, 2000--appropriately, that's 02/02",
+		"value": null,
+		"airdate": "2010-10-15T19:00:00.000Z",
+		"created_at": "2022-12-30T20:28:54.586Z",
+		"updated_at": "2022-12-30T20:28:54.586Z",
+		"category_id": 14591,
+		"game_id": 3482,
+		"invalid_count": null,
+		"category": {
+			"id": 14591,
+			"title": "cable channels",
+			"created_at": "2022-12-30T20:06:51.898Z",
+			"updated_at": "2022-12-30T20:06:51.898Z",
+			"clues_count": 10
+		}
+	},
+	{
+		"id": 143632,
+		"answer": "the Reign of Terror",
+		"question": "Robespierre's Committee of Public Safety controlled this period of revolution that saw 30,000 executions",
+		"value": null,
+		"airdate": "2011-01-06T20:00:00.000Z",
+		"created_at": "2022-12-30T20:26:32.207Z",
+		"updated_at": "2022-12-30T20:26:32.207Z",
+		"category_id": 16758,
+		"game_id": 3546,
+		"invalid_count": null,
+		"category": {
+			"id": 16758,
+			"title": "france, france revolution",
+			"created_at": "2022-12-30T20:26:30.850Z",
+			"updated_at": "2022-12-30T20:26:30.850Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 107018,
+		"answer": "Apollo",
+		"question": "Bernini's famous sculpture of this Greek god & Daphne is in Rome's Borghese Gallery",
+		"value": null,
+		"airdate": "2006-05-04T19:00:00.000Z",
+		"created_at": "2022-12-30T19:36:07.357Z",
+		"updated_at": "2022-12-30T19:36:07.357Z",
+		"category_id": 11579,
+		"game_id": 949,
+		"invalid_count": null,
+		"category": {
+			"id": 11579,
+			"title": "mythology & art",
+			"created_at": "2022-12-30T19:36:06.089Z",
+			"updated_at": "2022-12-30T19:36:06.089Z",
+			"clues_count": 10
+		}
+	},
+	{
+		"id": 44229,
+		"answer": "Dean Rusk",
+		"question": "In 1994 this Secretary of State under presidents Kennedy & Johnson passed away at age 85",
+		"value": null,
+		"airdate": "1995-09-19T19:00:00.000Z",
+		"created_at": "2022-12-30T18:56:07.999Z",
+		"updated_at": "2022-12-30T18:56:07.999Z",
+		"category_id": 95,
+		"game_id": 4495,
+		"invalid_count": null,
+		"category": {
+			"id": 95,
+			"title": "people",
+			"created_at": "2022-12-30T18:37:47.398Z",
+			"updated_at": "2022-12-30T18:37:47.398Z",
+			"clues_count": 328
+		}
+	},
+	{
+		"id": 200880,
+		"answer": "the Ten Commandments",
+		"question": "Deuteronomy 5 is one of the 2 places in the Bible where this important list is enumerated",
+		"value": null,
+		"airdate": "2020-04-10T19:00:00.000Z",
+		"created_at": "2022-12-30T21:46:21.738Z",
+		"updated_at": "2022-12-30T21:46:21.738Z",
+		"category_id": 15248,
+		"game_id": 6600,
+		"invalid_count": null,
+		"category": {
+			"id": 15248,
+			"title": "old deuteronomy",
+			"created_at": "2022-12-30T20:13:04.234Z",
+			"updated_at": "2022-12-30T20:13:04.234Z",
+			"clues_count": 10
+		}
+	},
+	{
+		"id": 136117,
+		"answer": "smallpox",
+		"question": "By 1980 a global vaccination effort led to the virtual eradication of this, the only time that's been done to a germ",
+		"value": null,
+		"airdate": "2010-02-12T20:00:00.000Z",
+		"created_at": "2022-12-30T20:16:21.411Z",
+		"updated_at": "2022-12-30T20:16:21.411Z",
+		"category_id": 15614,
+		"game_id": 3314,
+		"invalid_count": null,
+		"category": {
+			"id": 15614,
+			"title": "microbiology milestones",
+			"created_at": "2022-12-30T20:16:19.903Z",
+			"updated_at": "2022-12-30T20:16:19.903Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 201748,
+		"answer": "Good Friday",
+		"question": "Traditionally, this is the first full day of the Paschal Triduum, leading up to Easter",
+		"value": null,
+		"airdate": "2020-02-28T20:00:00.000Z",
+		"created_at": "2022-12-30T21:47:33.820Z",
+		"updated_at": "2022-12-30T21:47:33.820Z",
+		"category_id": 25357,
+		"game_id": 6565,
+		"invalid_count": null,
+		"category": {
+			"id": 25357,
+			"title": "just for one day",
+			"created_at": "2022-12-30T21:47:33.001Z",
+			"updated_at": "2022-12-30T21:47:33.001Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 186177,
+		"answer": "Dr. Jekyll & Mr. Hyde",
+		"question": "R.L. Stevenson wrote, âI had gone to bedâ this man, âI had awakenedâ this other man. âHow was this to be explained?â",
+		"value": null,
+		"airdate": "2016-09-22T19:00:00.000Z",
+		"created_at": "2022-12-30T21:26:31.740Z",
+		"updated_at": "2022-12-30T21:26:31.740Z",
+		"category_id": 23073,
+		"game_id": 5411,
+		"invalid_count": null,
+		"category": {
+			"id": 23073,
+			"title": "inquisitive writers",
+			"created_at": "2022-12-30T21:26:30.706Z",
+			"updated_at": "2022-12-30T21:26:30.706Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 48198,
+		"answer": "the Guggenheim",
+		"question": "Wesley Peters, Frank Lloyd Wright's son-in-law, designed a 4-story annex to this NYC art museum",
+		"value": null,
+		"airdate": "1997-01-27T20:00:00.000Z",
+		"created_at": "2022-12-30T18:57:53.736Z",
+		"updated_at": "2022-12-30T18:57:53.736Z",
+		"category_id": 2956,
+		"game_id": 650,
+		"invalid_count": null,
+		"category": {
+			"id": 2956,
+			"title": "u.s. museums",
+			"created_at": "2022-12-30T18:52:12.979Z",
+			"updated_at": "2022-12-30T18:52:12.979Z",
+			"clues_count": 20
+		}
+	},
+	{
+		"id": 175011,
+		"answer": "Nevada",
+		"question": "Atomic Testing Museum &Burlesque Hall of Fame",
+		"value": null,
+		"airdate": "2016-04-28T19:00:00.000Z",
+		"created_at": "2022-12-30T21:10:45.424Z",
+		"updated_at": "2022-12-30T21:10:45.424Z",
+		"category_id": 21477,
+		"game_id": 5264,
+		"invalid_count": null,
+		"category": {
+			"id": 21477,
+			"title": "stately museums",
+			"created_at": "2022-12-30T21:10:44.515Z",
+			"updated_at": "2022-12-30T21:10:44.515Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 10593,
+		"answer": "supply pipe & waste pipes",
+		"question": "A plumbing system consists of these 2 separate sets of pipes",
+		"value": null,
+		"airdate": "1988-02-26T20:00:00.000Z",
+		"created_at": "2022-12-30T18:41:52.632Z",
+		"updated_at": "2022-12-30T18:41:52.632Z",
+		"category_id": 1324,
+		"game_id": 4596,
+		"invalid_count": null,
+		"category": {
+			"id": 1324,
+			"title": "plumbing",
+			"created_at": "2022-12-30T18:41:52.485Z",
+			"updated_at": "2022-12-30T18:41:52.485Z",
+			"clues_count": 20
+		}
+	},
+	{
+		"id": 184648,
+		"answer": "<i>Schindler\\'s Ark</i>",
+		"question": "The original title of the book that became \"Schindler's List\" was \"Schindler's\" this Biblical item of refuge",
+		"value": null,
+		"airdate": "2016-12-06T20:00:00.000Z",
+		"created_at": "2022-12-30T21:24:24.318Z",
+		"updated_at": "2022-12-30T21:24:24.318Z",
+		"category_id": 22862,
+		"game_id": 5469,
+		"invalid_count": null,
+		"category": {
+			"id": 22862,
+			"title": "a barrage of books",
+			"created_at": "2022-12-30T21:24:23.096Z",
+			"updated_at": "2022-12-30T21:24:23.096Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 189677,
+		"answer": "Ruth Bader Ginsburg",
+		"question": "Her daughter Jane teaches I.P. law at Columbia, her alma mater; she cited Jane's work in an opinion for the Supreme Court",
+		"value": null,
+		"airdate": "2018-02-22T20:00:00.000Z",
+		"created_at": "2022-12-30T21:31:10.502Z",
+		"updated_at": "2022-12-30T21:31:10.502Z",
+		"category_id": 23611,
+		"game_id": 5914,
+		"invalid_count": null,
+		"category": {
+			"id": 23611,
+			"title": "mom genes",
+			"created_at": "2022-12-30T21:31:10.178Z",
+			"updated_at": "2022-12-30T21:31:10.178Z",
+			"clues_count": 4
+		}
+	},
+	{
+		"id": 166276,
+		"answer": "Berry Gordy",
+		"question": "(Jimmy of the Clue Crew presents the clue from Broadway, New York.)  Theatergoers are dancing in the aisles at \"Motown: The Musical\" about this record-company founder & his legendary artists",
+		"value": null,
+		"airdate": "2013-09-23T19:00:00.000Z",
+		"created_at": "2022-12-30T20:58:13.327Z",
+		"updated_at": "2022-12-30T20:58:13.327Z",
+		"category_id": 270,
+		"game_id": 4313,
+		"invalid_count": null,
+		"category": {
+			"id": 270,
+			"title": "broadway",
+			"created_at": "2022-12-30T18:38:16.934Z",
+			"updated_at": "2022-12-30T18:38:16.934Z",
+			"clues_count": 30
+		}
+	},
+	{
+		"id": 84747,
+		"answer": "toxicology",
+		"question": "The study of poisons & drugs, coroners often wait its report to determine the cause of death",
+		"value": null,
+		"airdate": "2003-07-17T19:00:00.000Z",
+		"created_at": "2022-12-30T19:15:50.098Z",
+		"updated_at": "2022-12-30T19:15:50.098Z",
+		"category_id": 1959,
+		"game_id": 2746,
+		"invalid_count": null,
+		"category": {
+			"id": 1959,
+			"title": "-ologies",
+			"created_at": "2022-12-30T18:45:22.813Z",
+			"updated_at": "2022-12-30T18:45:22.813Z",
+			"clues_count": 60
+		}
+	},
+	{
+		"id": 159306,
+		"answer": "the Teflon president",
+		"question": "While scrambling eggs for her kids, Congresswoman Pat Schroeder got the idea of calling Reagan this \"President\"",
+		"value": null,
+		"airdate": "2012-10-02T19:00:00.000Z",
+		"created_at": "2022-12-30T20:48:42.972Z",
+		"updated_at": "2022-12-30T20:48:42.972Z",
+		"category_id": 2828,
+		"game_id": 3982,
+		"invalid_count": null,
+		"category": {
+			"id": 2828,
+			"title": "political terms",
+			"created_at": "2022-12-30T18:51:10.308Z",
+			"updated_at": "2022-12-30T18:51:10.308Z",
+			"clues_count": 25
+		}
+	},
+	{
+		"id": 206817,
+		"answer": "Maryland",
+		"question": "On HBO's \"The Wire\", this state's Governor Robert Ehrlich had a cameo as a security guard",
+		"value": null,
+		"airdate": "2021-06-09T19:00:00.000Z",
+		"created_at": "2022-12-30T21:54:26.478Z",
+		"updated_at": "2022-12-30T21:54:26.478Z",
+		"category_id": 26098,
+		"game_id": 7041,
+		"invalid_count": null,
+		"category": {
+			"id": 26098,
+			"title": "the wire",
+			"created_at": "2022-12-30T21:54:25.518Z",
+			"updated_at": "2022-12-30T21:54:25.518Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 48524,
+		"answer": "Franklin Pierce",
+		"question": "Former first lady Barbara Bush is a great-great-great-niece of this president from New Hampshire",
+		"value": null,
+		"airdate": "1997-01-09T20:00:00.000Z",
+		"created_at": "2022-12-30T18:58:02.978Z",
+		"updated_at": "2022-12-30T18:58:02.978Z",
+		"category_id": 3511,
+		"game_id": 633,
+		"invalid_count": null,
+		"category": {
+			"id": 3511,
+			"title": "notable relatives",
+			"created_at": "2022-12-30T18:56:37.713Z",
+			"updated_at": "2022-12-30T18:56:37.713Z",
+			"clues_count": 10
+		}
+	},
+	{
+		"id": 109022,
+		"answer": "Robert Jarvik",
+		"question": "The first permanent artificial heart, implanted in Barney Clark in 1982, was named for this doctor",
+		"value": null,
+		"airdate": "2006-01-31T20:00:00.000Z",
+		"created_at": "2022-12-30T19:39:02.973Z",
+		"updated_at": "2022-12-30T19:39:02.973Z",
+		"category_id": 11877,
+		"game_id": 753,
+		"invalid_count": null,
+		"category": {
+			"id": 11877,
+			"title": "brave heart",
+			"created_at": "2022-12-30T19:39:01.030Z",
+			"updated_at": "2022-12-30T19:39:01.030Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 161266,
+		"answer": "a seahorse",
+		"question": "This small fish of the genus hippocampus has no stomach & must eat almost constantly to stay alive",
+		"value": null,
+		"airdate": "2014-05-19T19:00:00.000Z",
+		"created_at": "2022-12-30T20:51:24.393Z",
+		"updated_at": "2022-12-30T20:51:24.393Z",
+		"category_id": 702,
+		"game_id": 4507,
+		"invalid_count": null,
+		"category": {
+			"id": 702,
+			"title": "marine biology",
+			"created_at": "2022-12-30T18:39:32.428Z",
+			"updated_at": "2022-12-30T18:39:32.428Z",
+			"clues_count": 43
+		}
+	},
+	{
+		"id": 30941,
+		"answer": "Utah",
+		"question": "Its southeast corner touches Arizona, Colorado & New Mexico",
+		"value": null,
+		"airdate": "1993-07-02T19:00:00.000Z",
+		"created_at": "2022-12-30T18:50:19.720Z",
+		"updated_at": "2022-12-30T18:50:19.720Z",
+		"category_id": 753,
+		"game_id": 1695,
+		"invalid_count": null,
+		"category": {
+			"id": 753,
+			"title": "the 50 states",
+			"created_at": "2022-12-30T18:39:41.723Z",
+			"updated_at": "2022-12-30T18:39:41.723Z",
+			"clues_count": 95
+		}
+	},
+	{
+		"id": 171748,
+		"answer": "Tippecanoe",
+		"question": "Site of a Nov. 7, 1811 battle, this Indiana river got additional notoriety in an 1840 campaign of a different sort",
+		"value": null,
+		"airdate": "2014-11-18T20:00:00.000Z",
+		"created_at": "2022-12-30T21:05:57.613Z",
+		"updated_at": "2022-12-30T21:05:57.613Z",
+		"category_id": 20990,
+		"game_id": 4728,
+		"invalid_count": null,
+		"category": {
+			"id": 20990,
+			"title": "battle creek",
+			"created_at": "2022-12-30T21:05:56.161Z",
+			"updated_at": "2022-12-30T21:05:56.161Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 147418,
+		"answer": "the Balkan Peninsula",
+		"question": "The Rhodope Mountains are one of the most rugged parts of this peninsula",
+		"value": null,
+		"airdate": "2012-06-04T19:00:00.000Z",
+		"created_at": "2022-12-30T20:31:52.582Z",
+		"updated_at": "2022-12-30T20:31:52.582Z",
+		"category_id": 13451,
+		"game_id": 3910,
+		"invalid_count": null,
+		"category": {
+			"id": 13451,
+			"title": "mountain ranges",
+			"created_at": "2022-12-30T19:55:51.982Z",
+			"updated_at": "2022-12-30T19:55:51.982Z",
+			"clues_count": 10
+		}
+	},
+	{
+		"id": 43287,
+		"answer": "Mammoth Cave",
+		"question": "In this southern national park you can take a boat ride on the underground Echo River",
+		"value": null,
+		"airdate": "1995-11-01T19:00:00.000Z",
+		"created_at": "2022-12-30T18:55:42.894Z",
+		"updated_at": "2022-12-30T18:55:42.894Z",
+		"category_id": 265,
+		"game_id": 7118,
+		"invalid_count": null,
+		"category": {
+			"id": 265,
+			"title": "national parks",
+			"created_at": "2022-12-30T18:38:15.648Z",
+			"updated_at": "2022-12-30T18:38:15.648Z",
+			"clues_count": 80
+		}
+	},
+	{
+		"id": 63401,
+		"answer": "<i>I Shot Andy Warhol\"</i>",
+		"question": "This 1996 film takes its title from Valerie Solanas' confession of attacking a pop artist",
+		"value": null,
+		"airdate": "1998-10-19T19:00:00.000Z",
+		"created_at": "2022-12-30T19:05:05.153Z",
+		"updated_at": "2022-12-30T19:05:05.153Z",
+		"category_id": 5631,
+		"game_id": 842,
+		"invalid_count": null,
+		"category": {
+			"id": 5631,
+			"title": "artsy films",
+			"created_at": "2022-12-30T19:05:04.935Z",
+			"updated_at": "2022-12-30T19:05:04.935Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 114854,
+		"answer": "King Tut",
+		"question": "King from about 1347 to 1339 B.C.; got famous (again) in 1922; got a CAT scan in 2005 (to see how he died)",
+		"value": null,
+		"airdate": "2007-03-19T19:00:00.000Z",
+		"created_at": "2022-12-30T19:47:21.986Z",
+		"updated_at": "2022-12-30T19:47:21.986Z",
+		"category_id": 12659,
+		"game_id": 1779,
+		"invalid_count": null,
+		"category": {
+			"id": 12659,
+			"title": "a royal sum-up",
+			"created_at": "2022-12-30T19:47:20.979Z",
+			"updated_at": "2022-12-30T19:47:20.979Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 131492,
+		"answer": "fluoridation",
+		"question": "The American Dental Association is all for this process, practiced by cities since 1945",
+		"value": null,
+		"airdate": "2008-10-27T19:00:00.000Z",
+		"created_at": "2022-12-30T20:10:08.675Z",
+		"updated_at": "2022-12-30T20:10:08.675Z",
+		"category_id": 14927,
+		"game_id": 2752,
+		"invalid_count": null,
+		"category": {
+			"id": 14927,
+			"title": "let's have a drink... of water",
+			"created_at": "2022-12-30T20:10:07.645Z",
+			"updated_at": "2022-12-30T20:10:07.645Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 157471,
+		"answer": "Columbus Day",
+		"question": "At the beginning of each term, Supreme Court justices work one week, then get Monday off for this",
+		"value": null,
+		"airdate": "2012-12-28T20:00:00.000Z",
+		"created_at": "2022-12-30T20:46:06.823Z",
+		"updated_at": "2022-12-30T20:46:06.823Z",
+		"category_id": 1120,
+		"game_id": 4044,
+		"invalid_count": null,
+		"category": {
+			"id": 1120,
+			"title": "holidays & observances",
+			"created_at": "2022-12-30T18:41:04.242Z",
+			"updated_at": "2022-12-30T18:41:04.242Z",
+			"clues_count": 317
+		}
+	},
+	{
+		"id": 52317,
+		"answer": "Florence",
+		"question": "You'll find the statue (\"David\") seen here in this Italian city",
+		"value": null,
+		"airdate": "1998-05-13T19:00:00.000Z",
+		"created_at": "2022-12-30T18:59:47.649Z",
+		"updated_at": "2022-12-30T18:59:47.649Z",
+		"category_id": 4110,
+		"game_id": 2534,
+		"invalid_count": null,
+		"category": {
+			"id": 4110,
+			"title": "frozen in stone",
+			"created_at": "2022-12-30T18:59:47.400Z",
+			"updated_at": "2022-12-30T18:59:47.400Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 162542,
+		"answer": "the <i>Flying Dutchman</i>",
+		"question": "Legend has it Captain Vanderdecken still tries to round the Cape of Good Hope on this ship... & tries... & tries...",
+		"value": null,
+		"airdate": "2014-03-19T19:00:00.000Z",
+		"created_at": "2022-12-30T20:53:07.904Z",
+		"updated_at": "2022-12-30T20:53:07.904Z",
+		"category_id": 19596,
+		"game_id": 4450,
+		"invalid_count": null,
+		"category": {
+			"id": 19596,
+			"title": "legend",
+			"created_at": "2022-12-30T20:53:06.505Z",
+			"updated_at": "2022-12-30T20:53:06.505Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 14002,
+		"answer": "\"Hail To The Chief\"",
+		"question": "Based on a Scottish air; this was 1st used officially around 1845: [Instrumental music plays]",
+		"value": null,
+		"airdate": "1989-05-15T19:00:00.000Z",
+		"created_at": "2022-12-30T18:43:18.325Z",
+		"updated_at": "2022-12-30T18:43:18.325Z",
+		"category_id": 1628,
+		"game_id": 6663,
+		"invalid_count": null,
+		"category": {
+			"id": 1628,
+			"title": "patriotic songs",
+			"created_at": "2022-12-30T18:43:18.275Z",
+			"updated_at": "2022-12-30T18:43:18.275Z",
+			"clues_count": 25
+		}
+	},
+	{
+		"id": 21093,
+		"answer": "ZZ Top",
+		"question": "Collective name of Frank Beard & the 2 guys with beards seen here:",
+		"value": null,
+		"airdate": "1989-12-01T20:00:00.000Z",
+		"created_at": "2022-12-30T18:46:15.411Z",
+		"updated_at": "2022-12-30T18:46:15.411Z",
+		"category_id": 595,
+		"game_id": 451,
+		"invalid_count": null,
+		"category": {
+			"id": 595,
+			"title": "starts with \"z\"",
+			"created_at": "2022-12-30T18:39:12.741Z",
+			"updated_at": "2022-12-30T18:39:12.741Z",
+			"clues_count": 20
+		}
+	},
+	{
+		"id": 169218,
+		"answer": "Lake Ontario",
+		"question": "New York's Irondequoit Bay near Rochester is an inlet of this Great Lake",
+		"value": null,
+		"airdate": "2015-03-19T19:00:00.000Z",
+		"created_at": "2022-12-30T21:02:19.265Z",
+		"updated_at": "2022-12-30T21:02:19.265Z",
+		"category_id": 17757,
+		"game_id": 4853,
+		"invalid_count": null,
+		"category": {
+			"id": 17757,
+			"title": "inlets",
+			"created_at": "2022-12-30T20:35:50.879Z",
+			"updated_at": "2022-12-30T20:35:50.879Z",
+			"clues_count": 8
+		}
+	},
+	{
+		"id": 145095,
+		"answer": "4:03 PM",
+		"question": "4 dozen minutes after 3:15 PM",
+		"value": null,
+		"airdate": "2010-10-29T19:00:00.000Z",
+		"created_at": "2022-12-30T20:28:31.835Z",
+		"updated_at": "2022-12-30T20:28:31.835Z",
+		"category_id": 146,
+		"game_id": 3492,
+		"invalid_count": null,
+		"category": {
+			"id": 146,
+			"title": "time",
+			"created_at": "2022-12-30T18:37:54.584Z",
+			"updated_at": "2022-12-30T18:37:54.584Z",
+			"clues_count": 74
+		}
+	},
+	{
+		"id": 167609,
+		"answer": "Harriet Beecher Stowe",
+		"question": "Forrest Wilson's 1942 winner \"Crusader in Crinoline\" tells the story of this 19th c. abolitionist & author",
+		"value": null,
+		"airdate": "2015-06-05T19:00:00.000Z",
+		"created_at": "2022-12-30T21:00:01.796Z",
+		"updated_at": "2022-12-30T21:00:01.796Z",
+		"category_id": 20369,
+		"game_id": 4915,
+		"invalid_count": null,
+		"category": {
+			"id": 20369,
+			"title": "pulitzer prize-winning biographies",
+			"created_at": "2022-12-30T21:00:01.017Z",
+			"updated_at": "2022-12-30T21:00:01.017Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 132842,
+		"answer": "Ukraine",
+		"question": "Ethnically about 25% of Estonians are Russian; about 2% trace heritage to this 2nd-most populous ex-Soviet republic",
+		"value": null,
+		"airdate": "2010-07-19T19:00:00.000Z",
+		"created_at": "2022-12-30T20:11:56.374Z",
+		"updated_at": "2022-12-30T20:11:56.374Z",
+		"category_id": 15119,
+		"game_id": 3440,
+		"invalid_count": null,
+		"category": {
+			"id": 15119,
+			"title": "estonia",
+			"created_at": "2022-12-30T20:11:54.881Z",
+			"updated_at": "2022-12-30T20:11:54.881Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 97533,
+		"answer": "bellyache",
+		"question": "What you may get from having that extra helping of pie, or what you do when you complain about it",
+		"value": null,
+		"airdate": "2003-10-14T19:00:00.000Z",
+		"created_at": "2022-12-30T19:23:01.059Z",
+		"updated_at": "2022-12-30T19:23:01.059Z",
+		"category_id": 1209,
+		"game_id": 3132,
+		"invalid_count": null,
+		"category": {
+			"id": 1209,
+			"title": "body language",
+			"created_at": "2022-12-30T18:41:23.098Z",
+			"updated_at": "2022-12-30T18:41:23.098Z",
+			"clues_count": 125
+		}
+	},
+	{
+		"id": 166685,
+		"answer": "the Coast Guard",
+		"question": "All U.S. lighthouses come under the jurisdiction of this branch of the Armed Services",
+		"value": null,
+		"airdate": "2015-07-21T19:00:00.000Z",
+		"created_at": "2022-12-30T20:58:46.993Z",
+		"updated_at": "2022-12-30T20:58:46.993Z",
+		"category_id": 2220,
+		"game_id": 4985,
+		"invalid_count": null,
+		"category": {
+			"id": 2220,
+			"title": "lighthouses",
+			"created_at": "2022-12-30T18:47:09.415Z",
+			"updated_at": "2022-12-30T18:47:09.415Z",
+			"clues_count": 25
+		}
+	},
+	{
+		"id": 11453,
+		"answer": "a kazoo",
+		"question": "Instrument heard here, in the bridge of a 1962 Joanie Sommers hit:",
+		"value": null,
+		"airdate": "1988-01-01T20:00:00.000Z",
+		"created_at": "2022-12-30T18:42:14.182Z",
+		"updated_at": "2022-12-30T18:42:14.182Z",
+		"category_id": 492,
+		"game_id": 4644,
+		"invalid_count": null,
+		"category": {
+			"id": 492,
+			"title": "musical instruments",
+			"created_at": "2022-12-30T18:38:54.132Z",
+			"updated_at": "2022-12-30T18:38:54.132Z",
+			"clues_count": 239
+		}
+	},
+	{
+		"id": 168344,
+		"answer": "Morton\\'s salt",
+		"question": "Appropriately, a brainstorming session produced the little girl under an umbrella for this brand",
+		"value": null,
+		"airdate": "2015-04-30T19:00:00.000Z",
+		"created_at": "2022-12-30T21:01:05.710Z",
+		"updated_at": "2022-12-30T21:01:05.710Z",
+		"category_id": 14248,
+		"game_id": 4884,
+		"invalid_count": null,
+		"category": {
+			"id": 14248,
+			"title": "advertising icons",
+			"created_at": "2022-12-30T20:03:54.039Z",
+			"updated_at": "2022-12-30T20:03:54.039Z",
+			"clues_count": 20
+		}
+	},
+	{
+		"id": 208691,
+		"answer": "the <i>Exxon Valdez</i>",
+		"question": "Captain Joseph Hazelwood was in charge on March 24, 1989 when this oil tanker hit Bligh Reef, off Alaska's coast",
+		"value": null,
+		"airdate": "2021-03-12T20:00:00.000Z",
+		"created_at": "2022-12-30T21:56:53.861Z",
+		"updated_at": "2022-12-30T21:56:53.861Z",
+		"category_id": 22895,
+		"game_id": 6967,
+		"invalid_count": null,
+		"category": {
+			"id": 22895,
+			"title": "captain",
+			"created_at": "2022-12-30T21:24:45.149Z",
+			"updated_at": "2022-12-30T21:24:45.149Z",
+			"clues_count": 15
+		}
+	},
+	{
+		"id": 51923,
+		"answer": "<i>Coneheads</i>",
+		"question": "(Hi, I'm Jane Curtin.)  For this 1993 film I reprised my role as parental unit Prymaat",
+		"value": null,
+		"airdate": "1998-06-01T19:00:00.000Z",
+		"created_at": "2022-12-30T18:59:37.004Z",
+		"updated_at": "2022-12-30T18:59:37.004Z",
+		"category_id": 719,
+		"game_id": 1210,
+		"invalid_count": null,
+		"category": {
+			"id": 719,
+			"title": "the movies",
+			"created_at": "2022-12-30T18:39:35.048Z",
+			"updated_at": "2022-12-30T18:39:35.048Z",
+			"clues_count": 255
+		}
+	},
+	{
+		"id": 128978,
+		"answer": "Jack Kemp",
+		"question": "This onetime HUD secretary was also a Buffalo Bills QB, a N.Y. Congressman &--oh yeah--a 1996 VP candidate",
+		"value": null,
+		"airdate": "2009-02-20T20:00:00.000Z",
+		"created_at": "2022-12-30T20:06:40.692Z",
+		"updated_at": "2022-12-30T20:06:40.692Z",
+		"category_id": 14569,
+		"game_id": 2932,
+		"invalid_count": null,
+		"category": {
+			"id": 14569,
+			"title": "hud",
+			"created_at": "2022-12-30T20:06:39.443Z",
+			"updated_at": "2022-12-30T20:06:39.443Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 151509,
+		"answer": "the king of diamonds",
+		"question": "In a standard international deck, he's the only one-eyed king",
+		"value": null,
+		"airdate": "2011-11-21T20:00:00.000Z",
+		"created_at": "2022-12-30T20:37:40.863Z",
+		"updated_at": "2022-12-30T20:37:40.863Z",
+		"category_id": 17946,
+		"game_id": 3764,
+		"invalid_count": null,
+		"category": {
+			"id": 17946,
+			"title": "pick a card",
+			"created_at": "2022-12-30T20:37:39.061Z",
+			"updated_at": "2022-12-30T20:37:39.061Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 46244,
+		"answer": "Perry Mason",
+		"question": "This fictional lawyer, whose theme is heard here, won his first case on TV Sept. 21, 1957:",
+		"value": null,
+		"airdate": "1997-05-01T19:00:00.000Z",
+		"created_at": "2022-12-30T18:57:01.518Z",
+		"updated_at": "2022-12-30T18:57:01.518Z",
+		"category_id": 3573,
+		"game_id": 3025,
+		"invalid_count": null,
+		"category": {
+			"id": 3573,
+			"title": "tv attorneys",
+			"created_at": "2022-12-30T18:57:01.280Z",
+			"updated_at": "2022-12-30T18:57:01.280Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 94011,
+		"answer": "Carthage",
+		"question": "The ancient ruins of this city destroyed in 146 B.C. are just outside the capital city of Tunis",
+		"value": null,
+		"airdate": "2004-03-26T19:00:00.000Z",
+		"created_at": "2022-12-30T19:20:43.432Z",
+		"updated_at": "2022-12-30T19:20:43.432Z",
+		"category_id": 9838,
+		"game_id": 3310,
+		"invalid_count": null,
+		"category": {
+			"id": 9838,
+			"title": "tune in tunisia",
+			"created_at": "2022-12-30T19:20:43.133Z",
+			"updated_at": "2022-12-30T19:20:43.133Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 161007,
+		"answer": "Nicaragua",
+		"question": "In May 1926 President Coolidge sent U.S. marines into this nation to quell an uprising led by General Augusto Sandino",
+		"value": null,
+		"airdate": "2014-05-30T19:00:00.000Z",
+		"created_at": "2022-12-30T20:51:04.019Z",
+		"updated_at": "2022-12-30T20:51:04.019Z",
+		"category_id": 1992,
+		"game_id": 4523,
+		"invalid_count": null,
+		"category": {
+			"id": 1992,
+			"title": "the roaring '20s",
+			"created_at": "2022-12-30T18:45:37.878Z",
+			"updated_at": "2022-12-30T18:45:37.878Z",
+			"clues_count": 35
+		}
+	},
+	{
+		"id": 77301,
+		"answer": "Babe (the pig)",
+		"question": "He's the lovable character seen here",
+		"value": null,
+		"airdate": "2000-10-02T19:00:00.000Z",
+		"created_at": "2022-12-30T19:11:52.124Z",
+		"updated_at": "2022-12-30T19:11:52.124Z",
+		"category_id": 719,
+		"game_id": 3097,
+		"invalid_count": null,
+		"category": {
+			"id": 719,
+			"title": "the movies",
+			"created_at": "2022-12-30T18:39:35.048Z",
+			"updated_at": "2022-12-30T18:39:35.048Z",
+			"clues_count": 255
+		}
+	},
+	{
+		"id": 34763,
+		"answer": "coal",
+		"question": "Developed from buried peat deposits, lignite is the first stage in the formation of this fuel",
+		"value": null,
+		"airdate": "1994-02-24T20:00:00.000Z",
+		"created_at": "2022-12-30T18:51:58.613Z",
+		"updated_at": "2022-12-30T18:51:58.613Z",
+		"category_id": 5,
+		"game_id": 6769,
+		"invalid_count": null,
+		"category": {
+			"id": 5,
+			"title": "nature",
+			"created_at": "2022-12-30T18:37:36.842Z",
+			"updated_at": "2022-12-30T18:37:36.842Z",
+			"clues_count": 203
+		}
+	},
+	{
+		"id": 206916,
+		"answer": "\"This Land Is Your Land\"",
+		"question": "In 1940 Woody Guthrie wrote this song because he was sick of hearing \"God Bless America\"",
+		"value": null,
+		"airdate": "2021-06-04T19:00:00.000Z",
+		"created_at": "2022-12-30T21:54:33.573Z",
+		"updated_at": "2022-12-30T21:54:33.573Z",
+		"category_id": 26116,
+		"game_id": 7038,
+		"invalid_count": null,
+		"category": {
+			"id": 26116,
+			"title": "behind the song",
+			"created_at": "2022-12-30T21:54:32.239Z",
+			"updated_at": "2022-12-30T21:54:32.239Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 67106,
+		"answer": "1936",
+		"question": "George V dies, Jesse Owens wins 4 gold medals, Spanish Civil War erupts",
+		"value": null,
+		"airdate": "2000-03-13T19:00:00.000Z",
+		"created_at": "2022-12-30T19:06:51.342Z",
+		"updated_at": "2022-12-30T19:06:51.342Z",
+		"category_id": 6153,
+		"game_id": 270,
+		"invalid_count": null,
+		"category": {
+			"id": 6153,
+			"title": "oh what a year!",
+			"created_at": "2022-12-30T19:06:51.051Z",
+			"updated_at": "2022-12-30T19:06:51.051Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 190392,
+		"answer": "10 Downing Street",
+		"question": "Most cabinet meetings take place at a residence with this address",
+		"value": null,
+		"airdate": "2018-01-18T20:00:00.000Z",
+		"created_at": "2022-12-30T21:32:07.624Z",
+		"updated_at": "2022-12-30T21:32:07.624Z",
+		"category_id": 23721,
+		"game_id": 5888,
+		"invalid_count": null,
+		"category": {
+			"id": 23721,
+			"title": "british cabinetry",
+			"created_at": "2022-12-30T21:32:06.490Z",
+			"updated_at": "2022-12-30T21:32:06.490Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 108298,
+		"answer": "Dewey",
+		"question": "The 1st military campaign medal Congress approved, the Manila Bay Medal was known by the name of this adm.",
+		"value": null,
+		"airdate": "2006-03-06T20:00:00.000Z",
+		"created_at": "2022-12-30T19:38:00.297Z",
+		"updated_at": "2022-12-30T19:38:00.297Z",
+		"category_id": 1999,
+		"game_id": 822,
+		"invalid_count": null,
+		"category": {
+			"id": 1999,
+			"title": "medals & decorations",
+			"created_at": "2022-12-30T18:45:40.020Z",
+			"updated_at": "2022-12-30T18:45:40.020Z",
+			"clues_count": 35
+		}
+	},
+	{
+		"id": 171107,
+		"answer": "600 square inches",
+		"question": "The total surface area of a cube with each side 10 inches long is this",
+		"value": null,
+		"airdate": "2014-12-18T20:00:00.000Z",
+		"created_at": "2022-12-30T21:05:01.914Z",
+		"updated_at": "2022-12-30T21:05:01.914Z",
+		"category_id": 20910,
+		"game_id": 4753,
+		"invalid_count": null,
+		"category": {
+			"id": 20910,
+			"title": "do the math",
+			"created_at": "2022-12-30T21:05:00.529Z",
+			"updated_at": "2022-12-30T21:05:00.529Z",
+			"clues_count": 15
+		}
+	},
+	{
+		"id": 2241,
+		"answer": "Neil the St. Bernard",
+		"question": "Martini-loving character in the following:",
+		"value": null,
+		"airdate": "1986-03-21T19:00:00.000Z",
+		"created_at": "2022-12-30T18:38:31.788Z",
+		"updated_at": "2022-12-30T18:38:31.788Z",
+		"category_id": 371,
+		"game_id": 7400,
+		"invalid_count": null,
+		"category": {
+			"id": 371,
+			"title": "dogs",
+			"created_at": "2022-12-30T18:38:31.726Z",
+			"updated_at": "2022-12-30T18:38:31.726Z",
+			"clues_count": 93
+		}
+	},
+	{
+		"id": 215092,
+		"answer": "the Lorax",
+		"question": "Pro-environment & perhaps with a savior complex, he \"was shortish. And oldish... and mossy\", & kinda looked like Wilford Brimley",
+		"value": null,
+		"airdate": "2022-03-18T19:00:00.000Z",
+		"created_at": "2022-12-30T22:05:33.587Z",
+		"updated_at": "2022-12-30T22:05:33.587Z",
+		"category_id": 27263,
+		"game_id": 7312,
+		"invalid_count": null,
+		"category": {
+			"id": 27263,
+			"title": "analyzing the seuss character",
+			"created_at": "2022-12-30T22:05:32.331Z",
+			"updated_at": "2022-12-30T22:05:32.331Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 66443,
+		"answer": "Asia",
+		"question": "Taklimakan,Negev",
+		"value": null,
+		"airdate": "2000-04-12T19:00:00.000Z",
+		"created_at": "2022-12-30T19:06:32.531Z",
+		"updated_at": "2022-12-30T19:06:32.531Z",
+		"category_id": 6060,
+		"game_id": 2073,
+		"invalid_count": null,
+		"category": {
+			"id": 6060,
+			"title": "continents by desert",
+			"created_at": "2022-12-30T19:06:32.355Z",
+			"updated_at": "2022-12-30T19:06:32.355Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 128890,
+		"answer": "W.E.B. Du Bois",
+		"question": "(Dr. Gates gives the clue.)  I direct a research institute at Harvard University named for this author of \"The Souls of Black Folk\", black America's leading public intellectual through most of his long life, 1868-1963",
+		"value": null,
+		"airdate": "2009-02-25T20:00:00.000Z",
+		"created_at": "2022-12-30T20:06:33.975Z",
+		"updated_at": "2022-12-30T20:06:33.975Z",
+		"category_id": 14556,
+		"game_id": 2936,
+		"invalid_count": null,
+		"category": {
+			"id": 14556,
+			"title": "the african american experience",
+			"created_at": "2022-12-30T20:06:32.277Z",
+			"updated_at": "2022-12-30T20:06:32.277Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 7892,
+		"answer": "hawk",
+		"question": "Bird mentioned in the title song of the musical \"Oklahoma!\"",
+		"value": null,
+		"airdate": "1986-11-03T20:00:00.000Z",
+		"created_at": "2022-12-30T18:40:47.191Z",
+		"updated_at": "2022-12-30T18:40:47.191Z",
+		"category_id": 295,
+		"game_id": 4157,
+		"invalid_count": null,
+		"category": {
+			"id": 295,
+			"title": "birds",
+			"created_at": "2022-12-30T18:38:21.318Z",
+			"updated_at": "2022-12-30T18:38:21.318Z",
+			"clues_count": 147
+		}
+	},
+	{
+		"id": 70493,
+		"answer": "Maryland",
+		"question": "\"The Star-Spangled Banner State\"",
+		"value": null,
+		"airdate": "1999-10-04T19:00:00.000Z",
+		"created_at": "2022-12-30T19:08:30.248Z",
+		"updated_at": "2022-12-30T19:08:30.248Z",
+		"category_id": 2093,
+		"game_id": 1712,
+		"invalid_count": null,
+		"category": {
+			"id": 2093,
+			"title": "state nicknames",
+			"created_at": "2022-12-30T18:46:16.016Z",
+			"updated_at": "2022-12-30T18:46:16.016Z",
+			"clues_count": 65
+		}
+	},
+	{
+		"id": 124665,
+		"answer": "Thailand",
+		"question": "Fittingly the shape of this kingdom is often compared to an elephant's head; the \"trunk\" extends into the Malay Peninsula",
+		"value": null,
+		"airdate": "2007-10-26T19:00:00.000Z",
+		"created_at": "2022-12-30T20:00:45.437Z",
+		"updated_at": "2022-12-30T20:00:45.437Z",
+		"category_id": 13914,
+		"game_id": 2141,
+		"invalid_count": null,
+		"category": {
+			"id": 13914,
+			"title": "the nationals",
+			"created_at": "2022-12-30T20:00:43.793Z",
+			"updated_at": "2022-12-30T20:00:43.793Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 76926,
+		"answer": "deciduous",
+		"question": "Unlike most of its pine family relatives, the larch is classified as this, as it loses its needles each fall",
+		"value": null,
+		"airdate": "2000-10-19T19:00:00.000Z",
+		"created_at": "2022-12-30T19:11:40.797Z",
+		"updated_at": "2022-12-30T19:11:40.797Z",
+		"category_id": 531,
+		"game_id": 1852,
+		"invalid_count": null,
+		"category": {
+			"id": 531,
+			"title": "science & nature",
+			"created_at": "2022-12-30T18:39:01.103Z",
+			"updated_at": "2022-12-30T18:39:01.103Z",
+			"clues_count": 170
+		}
+	},
+	{
+		"id": 16823,
+		"answer": "<i>Prince Valiant</i>",
+		"question": "This strip by Harold R. Foster took place in the days of King Arthur",
+		"value": null,
+		"airdate": "1988-11-21T20:00:00.000Z",
+		"created_at": "2022-12-30T18:44:29.308Z",
+		"updated_at": "2022-12-30T18:44:29.308Z",
+		"category_id": 794,
+		"game_id": 6002,
+		"invalid_count": null,
+		"category": {
+			"id": 794,
+			"title": "the funnies",
+			"created_at": "2022-12-30T18:39:49.694Z",
+			"updated_at": "2022-12-30T18:39:49.694Z",
+			"clues_count": 45
+		}
+	},
+	{
+		"id": 2302,
+		"answer": "Rome",
+		"question": "City where you'd find landmark in this song: \"Three coins in the fountain\"",
+		"value": null,
+		"airdate": "1986-03-17T19:00:00.000Z",
+		"created_at": "2022-12-30T18:38:33.104Z",
+		"updated_at": "2022-12-30T18:38:33.104Z",
+		"category_id": 158,
+		"game_id": 7077,
+		"invalid_count": null,
+		"category": {
+			"id": 158,
+			"title": "landmarks",
+			"created_at": "2022-12-30T18:37:56.434Z",
+			"updated_at": "2022-12-30T18:37:56.434Z",
+			"clues_count": 115
+		}
+	},
+	{
+		"id": 11807,
+		"answer": "<i>The Music Man</i>",
+		"question": "1957 musical written by an Iowan from which the following comes:\"Oh, there's nothing halfway /About the Iowa way to treat you /When we treat you /Which we may not do at all /There's an Iowa kind of special /Chip-on-the-shoulder attitude /We've never been without /That we recall /We can be cold /As our falling...\"",
+		"value": null,
+		"airdate": "1987-12-11T20:00:00.000Z",
+		"created_at": "2022-12-30T18:42:22.839Z",
+		"updated_at": "2022-12-30T18:42:22.839Z",
+		"category_id": 1438,
+		"game_id": 5179,
+		"invalid_count": null,
+		"category": {
+			"id": 1438,
+			"title": "iowa",
+			"created_at": "2022-12-30T18:42:22.787Z",
+			"updated_at": "2022-12-30T18:42:22.787Z",
+			"clues_count": 14
+		}
+	},
+	{
+		"id": 129822,
+		"answer": "clouded leopard",
+		"question": "This medium-sized, distinctly marked cat of Asia has the scientific name Neofelis nebulosa",
+		"value": null,
+		"airdate": "2009-01-13T20:00:00.000Z",
+		"created_at": "2022-12-30T20:07:50.472Z",
+		"updated_at": "2022-12-30T20:07:50.472Z",
+		"category_id": 85,
+		"game_id": 2869,
+		"invalid_count": null,
+		"category": {
+			"id": 85,
+			"title": "mammals",
+			"created_at": "2022-12-30T18:37:46.178Z",
+			"updated_at": "2022-12-30T18:37:46.178Z",
+			"clues_count": 200
+		}
+	},
+	{
+		"id": 120598,
+		"answer": "the Drake Passage",
+		"question": "(Jimmy of the Clue Crew indicates a map on the monitor.)  The waterway that separates South America from Antarctica is known as this passage, for an explorer who may have navigated it in 1578",
+		"value": null,
+		"airdate": "2008-05-05T19:00:00.000Z",
+		"created_at": "2022-12-30T19:55:13.988Z",
+		"updated_at": "2022-12-30T19:55:13.988Z",
+		"category_id": 2452,
+		"game_id": 2453,
+		"invalid_count": null,
+		"category": {
+			"id": 2452,
+			"title": "around the world",
+			"created_at": "2022-12-30T18:48:44.444Z",
+			"updated_at": "2022-12-30T18:48:44.444Z",
+			"clues_count": 224
+		}
+	},
+	{
+		"id": 143445,
+		"answer": "Billie Holiday",
+		"question": "This jazz diva who sang \"Strange Fruit\" was just 44 and under arrest in her hospital bed when she passed away in 1959",
+		"value": null,
+		"airdate": "2011-01-14T20:00:00.000Z",
+		"created_at": "2022-12-30T20:26:16.706Z",
+		"updated_at": "2022-12-30T20:26:16.706Z",
+		"category_id": 16729,
+		"game_id": 3550,
+		"invalid_count": null,
+		"category": {
+			"id": 16729,
+			"title": "drop dead diva",
+			"created_at": "2022-12-30T20:26:16.386Z",
+			"updated_at": "2022-12-30T20:26:16.386Z",
+			"clues_count": 2
+		}
+	},
+	{
+		"id": 205799,
+		"answer": "olfactory",
+		"question": "The shortest of the cranial nerves, it's responsible for your sense of smell",
+		"value": null,
+		"airdate": "2021-07-27T19:00:00.000Z",
+		"created_at": "2022-12-30T21:53:05.011Z",
+		"updated_at": "2022-12-30T21:53:05.011Z",
+		"category_id": 25948,
+		"game_id": 7105,
+		"invalid_count": null,
+		"category": {
+			"id": 25948,
+			"title": "you've got some nerve",
+			"created_at": "2022-12-30T21:53:03.523Z",
+			"updated_at": "2022-12-30T21:53:03.523Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 145411,
+		"answer": "adultery",
+		"question": "Sin committed by the woman about whom Jesus said, \"he that is without sin among you, let him first cast a stone at her\"",
+		"value": null,
+		"airdate": "2010-10-14T19:00:00.000Z",
+		"created_at": "2022-12-30T20:28:56.362Z",
+		"updated_at": "2022-12-30T20:28:56.362Z",
+		"category_id": 17033,
+		"game_id": 3481,
+		"invalid_count": null,
+		"category": {
+			"id": 17033,
+			"title": "the gospels",
+			"created_at": "2022-12-30T20:28:55.564Z",
+			"updated_at": "2022-12-30T20:28:55.564Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 92931,
+		"answer": "morning glories",
+		"question": "(Cheryl of the Clue Crew reports from the science lab.)  Surprisingly, the sweet potato belongs to this botanical family of flowers that open in the early part of the day",
+		"value": null,
+		"airdate": "2004-05-19T19:00:00.000Z",
+		"created_at": "2022-12-30T19:20:08.639Z",
+		"updated_at": "2022-12-30T19:20:08.639Z",
+		"category_id": 9695,
+		"game_id": 2637,
+		"invalid_count": null,
+		"category": {
+			"id": 9695,
+			"title": "veggie-pourri",
+			"created_at": "2022-12-30T19:20:08.270Z",
+			"updated_at": "2022-12-30T19:20:08.270Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 111748,
+		"answer": "Ted Turner",
+		"question": "Beauregard & Rhett are 2 of this billionaire's grown kids",
+		"value": null,
+		"airdate": "2005-09-23T19:00:00.000Z",
+		"created_at": "2022-12-30T19:42:58.366Z",
+		"updated_at": "2022-12-30T19:42:58.366Z",
+		"category_id": 12253,
+		"game_id": 519,
+		"invalid_count": null,
+		"category": {
+			"id": 12253,
+			"title": "million dollar baby",
+			"created_at": "2022-12-30T19:42:57.265Z",
+			"updated_at": "2022-12-30T19:42:57.265Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 130444,
+		"answer": "Israel",
+		"question": "In a 1948-49 war, this Middle Eastern country increased the territory it controlled by about 50%",
+		"value": null,
+		"airdate": "2008-12-15T20:00:00.000Z",
+		"created_at": "2022-12-30T20:08:42.646Z",
+		"updated_at": "2022-12-30T20:08:42.646Z",
+		"category_id": 9994,
+		"game_id": 2824,
+		"invalid_count": null,
+		"category": {
+			"id": 9994,
+			"title": "country time",
+			"created_at": "2022-12-30T19:21:23.599Z",
+			"updated_at": "2022-12-30T19:21:23.599Z",
+			"clues_count": 20
+		}
+	},
+	{
+		"id": 68506,
+		"answer": "UNICEF",
+		"question": "Awarded the Nobel Peace Prize on Oct. 25, 1965, maybe it got its prize money in pennies on the 31st",
+		"value": null,
+		"airdate": "2000-01-06T20:00:00.000Z",
+		"created_at": "2022-12-30T19:07:31.565Z",
+		"updated_at": "2022-12-30T19:07:31.565Z",
+		"category_id": 6354,
+		"game_id": 2009,
+		"invalid_count": null,
+		"category": {
+			"id": 6354,
+			"title": "'65",
+			"created_at": "2022-12-30T19:07:31.341Z",
+			"updated_at": "2022-12-30T19:07:31.341Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 60094,
+		"answer": "Roger Maris",
+		"question": "\"61/61.  Against all odds\"",
+		"value": null,
+		"airdate": "1999-03-26T19:00:00.000Z",
+		"created_at": "2022-12-30T19:03:29.386Z",
+		"updated_at": "2022-12-30T19:03:29.386Z",
+		"category_id": 5181,
+		"game_id": 2319,
+		"invalid_count": null,
+		"category": {
+			"id": 5181,
+			"title": "epitaphs",
+			"created_at": "2022-12-30T19:03:29.169Z",
+			"updated_at": "2022-12-30T19:03:29.169Z",
+			"clues_count": 10
+		}
+	},
+	{
+		"id": 134036,
+		"answer": "(2 of) Leonid Brezhnev, Lenny Bruce, Lester Bangs & Leonard Bernstein",
+		"question": "In R.E.M.'s \"It's The End Of The World As We Know It\", 2 of the 4 men with the initials \"L.B.\"",
+		"value": null,
+		"airdate": "2010-05-21T19:00:00.000Z",
+		"created_at": "2022-12-30T20:13:33.956Z",
+		"updated_at": "2022-12-30T20:13:33.956Z",
+		"category_id": 1687,
+		"game_id": 3396,
+		"invalid_count": null,
+		"category": {
+			"id": 1687,
+			"title": "song lyrics",
+			"created_at": "2022-12-30T18:43:35.504Z",
+			"updated_at": "2022-12-30T18:43:35.504Z",
+			"clues_count": 70
+		}
+	},
+	{
+		"id": 152865,
+		"answer": "nitrogen",
+		"question": "Daniel Rutherford discovered this gas that makes up most of the atmosphere & called it \"noxious air\"",
+		"value": null,
+		"airdate": "2013-08-02T19:00:00.000Z",
+		"created_at": "2022-12-30T20:39:38.205Z",
+		"updated_at": "2022-12-30T20:39:38.205Z",
+		"category_id": 1182,
+		"game_id": 4287,
+		"invalid_count": null,
+		"category": {
+			"id": 1182,
+			"title": "the elements",
+			"created_at": "2022-12-30T18:41:16.284Z",
+			"updated_at": "2022-12-30T18:41:16.284Z",
+			"clues_count": 79
+		}
+	},
+	{
+		"id": 128503,
+		"answer": "the Sudan",
+		"question": "The reservoir known as Lake Nasser in Egypt is Lake Nubia in this country",
+		"value": null,
+		"airdate": "2009-03-16T19:00:00.000Z",
+		"created_at": "2022-12-30T20:06:01.247Z",
+		"updated_at": "2022-12-30T20:06:01.247Z",
+		"category_id": 14497,
+		"game_id": 2959,
+		"invalid_count": null,
+		"category": {
+			"id": 14497,
+			"title": "lands o' lakes",
+			"created_at": "2022-12-30T20:06:00.081Z",
+			"updated_at": "2022-12-30T20:06:00.081Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 205773,
+		"answer": "Remember the Maine",
+		"question": "It became a battle cry   after it appeared in a cartoon caption in the Washington Post April 3, 1898",
+		"value": null,
+		"airdate": "2021-07-28T19:00:00.000Z",
+		"created_at": "2022-12-30T21:53:02.625Z",
+		"updated_at": "2022-12-30T21:53:02.625Z",
+		"category_id": 25946,
+		"game_id": 7106,
+		"invalid_count": null,
+		"category": {
+			"id": 25946,
+			"title": "do you remember?",
+			"created_at": "2022-12-30T21:53:01.107Z",
+			"updated_at": "2022-12-30T21:53:01.107Z",
+			"clues_count": 5
+		}
+	},
+	{
+		"id": 209545,
+		"answer": "Leopold & Loeb",
+		"question": "The movie \"Rope\" was partly based on a murder  committed by this pair, first names Nathan & Richard",
+		"value": null,
+		"airdate": "2021-02-02T20:00:00.000Z",
+		"created_at": "2022-12-30T21:58:01.902Z",
+		"updated_at": "2022-12-30T21:58:01.902Z",
+		"category_id": 26498,
+		"game_id": 6928,
+		"invalid_count": null,
+		"category": {
+			"id": 26498,
+			"title": "american names",
+			"created_at": "2022-12-30T21:58:00.208Z",
+			"updated_at": "2022-12-30T21:58:00.208Z",
+			"clues_count": 10
+		}
+	},
+	{
+		"id": 114164,
+		"answer": "Louisiana",
+		"question": "One of this state's largest cities is named for steamboat builder & captain Henry Schreve",
+		"value": null,
+		"airdate": "2007-04-19T19:00:00.000Z",
+		"created_at": "2022-12-30T19:46:26.529Z",
+		"updated_at": "2022-12-30T19:46:26.529Z",
+		"category_id": 12574,
+		"game_id": 1804,
+		"invalid_count": null,
+		"category": {
+			"id": 12574,
+			"title": "lesser-known americans",
+			"created_at": "2022-12-30T19:46:25.177Z",
+			"updated_at": "2022-12-30T19:46:25.177Z",
+			"clues_count": 14
+		}
+	},
+	{
+		"id": 173221,
+		"answer": "Andrew Johnson",
+		"question": "He was the first vice president to assume the presidency upon the assassination of a president",
+		"value": null,
+		"airdate": "2016-07-25T19:00:00.000Z",
+		"created_at": "2022-12-30T21:08:06.416Z",
+		"updated_at": "2022-12-30T21:08:06.416Z",
+		"category_id": 2191,
+		"game_id": 5366,
+		"invalid_count": null,
+		"category": {
+			"id": 2191,
+			"title": "vice presidents",
+			"created_at": "2022-12-30T18:46:56.999Z",
+			"updated_at": "2022-12-30T18:46:56.999Z",
+			"clues_count": 63
+		}
+	}
+]

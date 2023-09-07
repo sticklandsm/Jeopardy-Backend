@@ -1,0 +1,70 @@
+{
+  "jeopardyRound": [
+    {
+      "categoryName": "",
+      "clues": [
+        {
+          "id": 0,
+          "game_id": 0,
+          "value": 0,
+          "daily_double": false,
+          "round": "",
+          "category": "",
+          "clue": "",
+          "response": ""
+        }
+      ]
+    },
+    {
+      "categoryName": "",
+      "clues": [
+        {
+          "id": 0,
+          "game_id": 0,
+          "value": 0,
+          "daily_double": false,
+          "round": "",
+          "category": "",
+          "clue": "",
+          "response": ""
+        }
+      ]
+    }
+  ],
+  "doubleJeopardyRound": [
+    {
+      "categoryName": "",
+      "clues": [
+        {
+          "id": 0,
+          "game_id": 0,
+          "value": 0,
+          "daily_double": false,
+          "round": "",
+          "category": "",
+          "clue": "",
+          "response": ""
+        }
+      ]
+    }
+  ],
+  "finalJeopardy": {
+    "id": 0,
+    "answer": "",
+    "question": "",
+    "value": null,
+    "airdate": "",
+    "created_at": "",
+    "updated_at": "",
+    "category_id": 0,
+    "game_id": 0,
+    "invalid_count": null,
+    "category": {
+      "id": 0,
+      "title": "",
+      "created_at": "",
+      "updated_at": "",
+      "clues_count": 0
+    }
+  }
+}
