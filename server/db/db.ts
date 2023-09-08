@@ -8,7 +8,7 @@ const sequelize = new Sequelize({
   logging: false,
   dialect: 'mysql',
   dialectOptions: {
-    ssl: { ca: process.env.CERT },
+    ssl: { ca: process.env.CERT, rejectUnauthorized: false },
   },
   host: process.env.HOST,
   port: Number(process.env.SERVER_PORT),
