@@ -17,6 +17,7 @@ const sequelize = new Sequelize({
   database: process.env.DATABASE,
 })
 
+//Comment this in if it's a local db
 // const sequelize = new Sequelize({
 //   logging: false,
 //   dialect: 'mysql',
