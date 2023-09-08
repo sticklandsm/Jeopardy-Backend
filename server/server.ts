@@ -47,7 +47,7 @@ app.get('/game/:gameId', async (req, res) => {
             'clue',
             'value',
             'daily_double',
-            'answer',
+            'clue',
             'has_been_answered',
           ],
           where: {
@@ -118,7 +118,7 @@ app.get('/newGame', async (req, res) => {
             clue,
             value,
             daily_double,
-            answer: response,
+            response,
             has_been_answered: false,
             category_id: id,
           })
@@ -141,7 +141,7 @@ app.get('/newGame', async (req, res) => {
             clue,
             value,
             daily_double,
-            answer: response,
+            response,
             has_been_answered: false,
             category_id: id,
           })

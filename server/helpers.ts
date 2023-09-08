@@ -30,7 +30,9 @@ function getJeopardyRound(
   const jeopardyRound = Array.from({ length: 5 }, () => {
     let round = getJeopardyCategory(questions, roundType)
     while (round.clues.length < 5) {
-      console.log(`That's only 4 questions in the ${roundType} round, retrying`)
+      console.log(
+        `That's only ${round.clues.length} questions in the ${roundType} round, retrying`
+      )
       round = getJeopardyCategory(questions, roundType)
     }
     return round

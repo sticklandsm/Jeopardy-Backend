@@ -69,7 +69,7 @@ const Clue = sequelize.define('clue', {
   daily_double: {
     type: DataTypes.BOOLEAN,
   },
-  answer: {
+  response: {
     type: DataTypes.STRING,
   },
   has_been_answered: {
