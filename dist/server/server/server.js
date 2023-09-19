@@ -58,7 +58,7 @@ app.get('/game/:gameId', (req, res) => __awaiter(void 0, void 0, void 0, functio
             },
         }));
         const categoriesWithClues = yield Promise.all(currentCategories.map((category) => __awaiter(void 0, void 0, void 0, function* () {
-            const clues = yield db_1.Clue.findAll({
+            const clues = (yield db_1.Clue.findAll({
                 raw: true,
                 attributes: [
                     'id',
@@ -72,7 +72,7 @@ app.get('/game/:gameId', (req, res) => __awaiter(void 0, void 0, void 0, functio
                 where: {
                     category_id: category.id,
                 },
-            });
+            }));
             return { category, clues };
         })));
         const jeopardyRound = categoriesWithClues
@@ -80,10 +80,16 @@ app.get('/game/:gameId', (req, res) => __awaiter(void 0, void 0, void 0, functio
             .map((category) => {
             return Object.assign(Object.assign({}, category), { categoryName: category.category.category_name });
         });
+        jeopardyRound.forEach((category) => {
+            category.clues.sort((a, b) => a.value - b.value);
+        });
         const doubleJeopardyRound = categoriesWithClues
             .filter((category) => category.category.double_jeopardy)
             .map((category) => {
             return Object.assign(Object.assign({}, category), { categoryName: category.category.category_name });
+        });
+        doubleJeopardyRound.forEach((category) => {
+            category.clues.sort((a, b) => a.value - b.value);
         });
         res.json({ jeopardyRound, doubleJeopardyRound });
     }
@@ -162,14 +168,14 @@ app.get('/clueAnswered/:clueId', (req, res) => __awaiter(void 0, void 0, void 0,
         res.status(200).json({ message: 'Succesfully updated clue: ' + clueId });
     }
     catch (error) {
-        console.log(error);
+        console.error(error);
         res.status(200);
     }
 }));
 const PORT = process.env['PORT'] || 8999;
 const wsServer = new ws_1.default.Server({ server });
 wsServer.on('connection', (client) => {
-    client.send('Welcome to the internet');
+    client.send('WS connection established');
     console.log('Connection in back end');
     client.on('message', (data) => {
         client.send('message received: ' + data);

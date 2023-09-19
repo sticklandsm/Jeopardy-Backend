@@ -9,6 +9,7 @@ import { sequelize, Clue, Category, Player, Game } from './db/db'
 import {
   CategoryWithoutCluesDB,
   GameWithCategoriesNoCluesDB,
+  Question,
 } from '../interfaces/question'
 import { Model } from 'sequelize'
 
@@ -32,7 +33,7 @@ app.get('/game/:gameId', async (req, res) => {
 
     const categoriesWithClues = await Promise.all(
       currentCategories.map(async (category) => {
-        const clues = await Clue.findAll({
+        const clues = (await Clue.findAll({
           raw: true,
           attributes: [
             'id',
@@ -46,7 +47,7 @@ app.get('/game/:gameId', async (req, res) => {
           where: {
             category_id: category.id,
           },
-        })
+        })) as unknown as Question[]
         return { category, clues }
       })
     )
@@ -57,11 +58,19 @@ app.get('/game/:gameId', async (req, res) => {
         return { ...category, categoryName: category.category.category_name }
       })
 
+    jeopardyRound.forEach((category) => {
+      category.clues.sort((a, b) => a.value - b.value)
+    })
+
     const doubleJeopardyRound = categoriesWithClues
       .filter((category) => category.category.double_jeopardy)
       .map((category) => {
         return { ...category, categoryName: category.category.category_name }
       })
+
+    doubleJeopardyRound.forEach((category) => {
+      category.clues.sort((a, b) => a.value - b.value)
+    })
 
     res.json({ jeopardyRound, doubleJeopardyRound })
   } catch (error) {
@@ -83,7 +92,6 @@ app.get('/newGame', async (req, res) => {
       `http://jservice.io//api/final?count=20`
     )
 
-    console.log(clueBaseResponse)
     const fullGame = getFullJeopardyGame(
       clueBaseResponse.body,
       jserviceResponse.body
@@ -160,7 +168,7 @@ app.get('/clueAnswered/:clueId', async (req, res) => {
     await clueInDB?.update({ has_been_answered: true })
     res.status(200).json({ message: 'Succesfully updated clue: ' + clueId })
   } catch (error) {
-    console.log(error)
+    console.error(error)
     res.status(200)
   }
 })
@@ -170,7 +178,7 @@ const PORT = process.env['PORT'] || 8999
 const wsServer = new WebSocket.Server({ server })
 
 wsServer.on('connection', (client) => {
-  client.send('Welcome to the internet')
+  client.send('WS connection established')
   console.log('Connection in back end')
   client.on('message', (data) => {
     client.send('message received: ' + data)

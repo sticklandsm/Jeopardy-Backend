@@ -31,8 +31,11 @@ function getJeopardyCategory(questions, roundType) {
     for (let i = -30; i <= 30; i += 6) {
         if (questions[questionNumber + i]) {
             if (questions[questionNumber + i].category === initialQuestion.category) {
-                category.push(questions[questionNumber + i]);
-                questions.slice(questionNumber + i, 1);
+                if (questions[questionNumber + i].value !==
+                    category[category.length - 1].value) {
+                    category.push(questions[questionNumber + i]);
+                    questions.slice(questionNumber + i, 1);
+                }
             }
         }
     }

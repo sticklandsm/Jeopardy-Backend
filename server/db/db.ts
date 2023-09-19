@@ -17,9 +17,9 @@ const sequelize = new Sequelize({
   database: process.env.DATABASE,
 })
 
-//Comment this if it's a local db
+// Comment this if it's a local db
 // const sequelize = new Sequelize({
-//   logging: true,
+//   logging: false,
 //   dialect: 'mysql',
 //   host: 'localhost',
 //   port: 3306,
