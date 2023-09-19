@@ -46,15 +46,6 @@ const db_1 = require("./db/db");
 const app = express();
 //initialize a simple http server
 const server = http.createServer(app);
-app.get('/users', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    try {
-        const games = yield db_1.Clue.findAll();
-        res.json(games);
-    }
-    catch (error) {
-        res.status(500).json({ error: 'Database error' });
-    }
-}));
 app.get('/game/:gameId', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const gameId = Number(req.params.gameId);
     // const test = await Clue.findAll();
@@ -70,11 +61,13 @@ app.get('/game/:gameId', (req, res) => __awaiter(void 0, void 0, void 0, functio
             const clues = yield db_1.Clue.findAll({
                 raw: true,
                 attributes: [
+                    'id',
                     'clue',
                     'value',
                     'daily_double',
                     'clue',
                     'has_been_answered',
+                    'response',
                 ],
                 where: {
                     category_id: category.id,
@@ -161,14 +154,26 @@ app.get('/newGame', (req, res) => __awaiter(void 0, void 0, void 0, function* ()
         res.json((0, helpers_1.getFullJeopardyGame)(questions_json_1.default, finalJeopardy_json_1.default));
     }
 }));
+app.get('/clueAnswered/:clueId', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    const clueId = Number(req.params.clueId);
+    try {
+        const clueInDB = yield db_1.Clue.findByPk(clueId);
+        yield (clueInDB === null || clueInDB === void 0 ? void 0 : clueInDB.update({ has_been_answered: true }));
+        res.status(200).json({ message: 'Succesfully updated clue: ' + clueId });
+    }
+    catch (error) {
+        console.log(error);
+        res.status(200);
+    }
+}));
 const PORT = process.env['PORT'] || 8999;
 const wsServer = new ws_1.default.Server({ server });
-wsServer.on('connection', (socket) => {
-    socket.send('Welcome to the internet');
+wsServer.on('connection', (client) => {
+    client.send('Welcome to the internet');
     console.log('Connection in back end');
-    socket.on('message', (data) => {
-        socket.send('message received: ' + data);
-        broadcast(data, socket);
+    client.on('message', (data) => {
+        client.send('message received: ' + data);
+        broadcast(data, client);
     });
 });
 function broadcast(data, socketToOmit) {

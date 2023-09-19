@@ -19,7 +19,7 @@ const sequelize = new Sequelize({
 
 //Comment this if it's a local db
 // const sequelize = new Sequelize({
-//   logging: false,
+//   logging: true,
 //   dialect: 'mysql',
 //   host: 'localhost',
 //   port: 3306,

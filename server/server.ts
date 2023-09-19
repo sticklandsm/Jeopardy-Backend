@@ -17,15 +17,6 @@ const app = express()
 //initialize a simple http server
 const server = http.createServer(app)
 
-app.get('/users', async (req, res) => {
-  try {
-    const games = await Clue.findAll()
-    res.json(games)
-  } catch (error) {
-    res.status(500).json({ error: 'Database error' })
-  }
-})
-
 app.get('/game/:gameId', async (req, res) => {
   const gameId = Number(req.params.gameId)
   // const test = await Clue.findAll();
@@ -44,11 +35,13 @@ app.get('/game/:gameId', async (req, res) => {
         const clues = await Clue.findAll({
           raw: true,
           attributes: [
+            'id',
             'clue',
             'value',
             'daily_double',
             'clue',
             'has_been_answered',
+            'response',
           ],
           where: {
             category_id: category.id,
@@ -89,6 +82,8 @@ app.get('/newGame', async (req, res) => {
     const jserviceResponse = await request.get(
       `http://jservice.io//api/final?count=20`
     )
+
+    console.log(clueBaseResponse)
     const fullGame = getFullJeopardyGame(
       clueBaseResponse.body,
       jserviceResponse.body
@@ -158,16 +153,28 @@ app.get('/newGame', async (req, res) => {
   }
 })
 
+app.get('/clueAnswered/:clueId', async (req, res) => {
+  const clueId = Number(req.params.clueId)
+  try {
+    const clueInDB = await Clue.findByPk(clueId)
+    await clueInDB?.update({ has_been_answered: true })
+    res.status(200).json({ message: 'Succesfully updated clue: ' + clueId })
+  } catch (error) {
+    console.log(error)
+    res.status(200)
+  }
+})
+
 const PORT = process.env['PORT'] || 8999
 
 const wsServer = new WebSocket.Server({ server })
 
-wsServer.on('connection', (socket) => {
-  socket.send('Welcome to the internet')
+wsServer.on('connection', (client) => {
+  client.send('Welcome to the internet')
   console.log('Connection in back end')
-  socket.on('message', (data) => {
-    socket.send('message received: ' + data)
-    broadcast(data, socket)
+  client.on('message', (data) => {
+    client.send('message received: ' + data)
+    broadcast(data, client)
   })
 })
 
