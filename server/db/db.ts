@@ -18,6 +18,7 @@ const sequelize = new Sequelize({
 })
 
 // Comment this if it's a local db
+//change to nrd to run Sean
 // const sequelize = new Sequelize({
 //   logging: false,
 //   dialect: 'mysql',
@@ -62,7 +63,7 @@ const Category = sequelize.define('category', {
 // Define the Clue model
 const Clue = sequelize.define('clue', {
   clue: {
-    type: DataTypes.STRING,
+    type: DataTypes.TEXT,
   },
   value: {
     type: DataTypes.INTEGER,

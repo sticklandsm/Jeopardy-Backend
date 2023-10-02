@@ -73,7 +73,10 @@ app.get('/game/:gameId', (req, res) => __awaiter(void 0, void 0, void 0, functio
                     category_id: category.id,
                 },
             }));
-            return { category, clues };
+            const cluesWithOnScreenCurrently = clues.map((clue) => {
+                return Object.assign(Object.assign({}, clue), { onScreenCurrently: false });
+            });
+            return { category, clues: cluesWithOnScreenCurrently };
         })));
         const jeopardyRound = categoriesWithClues
             .filter((category) => !category.category.double_jeopardy)
@@ -101,7 +104,7 @@ app.get('/game/:gameId', (req, res) => __awaiter(void 0, void 0, void 0, functio
 app.get('/newGame', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const randomNum = (0, helpers_1.generateRandom)(360000);
     try {
-        const clueBaseResponse = yield superagent_1.default.get(`cluebase.lukelav.in/clues?limit=250&order_by=id&offset=${randomNum}`
+        const clueBaseResponse = yield superagent_1.default.get(`cluebase.lukelav.in/clues?limit=500&order_by=id&offset=${randomNum}`
         // `cluebase.lukelav.in/clues?limit=1000&order_by=category&sort=asc&offset=${randomNum}`
         );
         const jserviceResponse = yield superagent_1.default.get(`http://jservice.io//api/final?count=20`);
@@ -175,18 +178,21 @@ app.get('/clueAnswered/:clueId', (req, res) => __awaiter(void 0, void 0, void 0,
 const PORT = process.env['PORT'] || 8999;
 const wsServer = new ws_1.default.Server({ server });
 wsServer.on('connection', (client) => {
-    client.send('WS connection established');
+    client.send(JSON.stringify({ message: 'WS connection established' }));
     console.log('Connection in back end');
     client.on('message', (data) => {
-        client.send('message received: ' + data);
         broadcast(data, client);
     });
 });
 function broadcast(data, socketToOmit) {
     wsServer.clients.forEach((connectedClient) => {
-        if (connectedClient.readyState === ws_1.default.OPEN &&
-            connectedClient !== socketToOmit) {
-            connectedClient.send(JSON.stringify(data));
+        if (connectedClient.readyState === ws_1.default.OPEN
+        // &&
+        // connectedClient !== socketToOmit
+        ) {
+            const decodedData = JSON.parse(data.toString());
+            const dataToSend = Object.assign(Object.assign({}, decodedData), { source: 'server' });
+            connectedClient.send(JSON.stringify(dataToSend));
         }
     });
 }

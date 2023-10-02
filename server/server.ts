@@ -48,7 +48,11 @@ app.get('/game/:gameId', async (req, res) => {
             category_id: category.id,
           },
         })) as unknown as Question[]
-        return { category, clues }
+
+        const cluesWithOnScreenCurrently = clues.map((clue) => {
+          return { ...clue, onScreenCurrently: false }
+        })
+        return { category, clues: cluesWithOnScreenCurrently }
       })
     )
 
@@ -84,7 +88,7 @@ app.get('/newGame', async (req, res) => {
 
   try {
     const clueBaseResponse = await request.get(
-      `cluebase.lukelav.in/clues?limit=250&order_by=id&offset=${randomNum}`
+      `cluebase.lukelav.in/clues?limit=500&order_by=id&offset=${randomNum}`
       // `cluebase.lukelav.in/clues?limit=1000&order_by=category&sort=asc&offset=${randomNum}`
     )
 
@@ -178,10 +182,9 @@ const PORT = process.env['PORT'] || 8999
 const wsServer = new WebSocket.Server({ server })
 
 wsServer.on('connection', (client) => {
-  client.send('WS connection established')
+  client.send(JSON.stringify({ message: 'WS connection established' }))
   console.log('Connection in back end')
   client.on('message', (data) => {
-    client.send('message received: ' + data)
     broadcast(data, client)
   })
 })
@@ -189,10 +192,14 @@ wsServer.on('connection', (client) => {
 function broadcast(data: Object, socketToOmit: WebSocket) {
   wsServer.clients.forEach((connectedClient) => {
     if (
-      connectedClient.readyState === WebSocket.OPEN &&
-      connectedClient !== socketToOmit
+      connectedClient.readyState === WebSocket.OPEN
+      // &&
+      // connectedClient !== socketToOmit
     ) {
-      connectedClient.send(JSON.stringify(data))
+      const decodedData = JSON.parse(data.toString())
+
+      const dataToSend = { ...decodedData, source: 'server' }
+      connectedClient.send(JSON.stringify(dataToSend))
     }
   })
 }

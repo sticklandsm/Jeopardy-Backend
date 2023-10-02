@@ -20,6 +20,7 @@ dotenv_1.default.config();
 //   database: process.env.DATABASE,
 // })
 // Comment this if it's a local db
+//change to nrd to run Sean
 const sequelize = new sequelize_1.Sequelize({
     logging: false,
     dialect: 'mysql',
@@ -64,7 +65,7 @@ exports.Category = Category;
 // Define the Clue model
 const Clue = sequelize.define('clue', {
     clue: {
-        type: sequelize_1.DataTypes.STRING,
+        type: sequelize_1.DataTypes.TEXT,
     },
     value: {
         type: sequelize_1.DataTypes.INTEGER,

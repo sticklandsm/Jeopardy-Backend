@@ -1,0 +1,41 @@
+{"categoryName": "Airports",
+  "clues": [{
+  "id": 551,
+  "clue": "There are Midway Airports in Idaho, Indiana, Mississippi & New Mexico, as well as in this major city",
+  "value": 200,
+  "daily_double": 0,
+  "has_been_answered": 0,
+  "response": "Chicago"
+},
+{
+  "id": 552,
+  "clue": "Though the planes land on paved runways, Lexington Kentucky's airport is named for this grass",
+  "value": 400,
+  "daily_double": 0,
+  "has_been_answered": 0,
+  "response": "bluegrass"
+},
+{
+  "id": 553,
+  "clue": "Though he was court-martialed, Milwaukee's airport is named for this general & advocate of U.S. air power",
+  "value": 600,
+  "daily_double": 0,
+  "has_been_answered": 0,
+  "response": "Billy Mitchell"
+},
+{
+  "id": 554,
+  "clue": "Home field of the president's plane, Air Force One",
+  "value": 800,
+  "daily_double": 0,
+  "has_been_answered": 0,
+  "response": "Andrews Air Force Base"
+},
+{
+  "id": 555,
+  "clue": "The airport formerly called Friendship Int'l is now named for these 2 cities which it serves",
+  "value": 1000,
+  "daily_double": 0,
+  "has_been_answered": 0,
+  "response": "Baltimore & Washington"
+}]}
