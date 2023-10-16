@@ -76,7 +76,18 @@ app.get('/game/:gameId', async (req, res) => {
       category.clues.sort((a, b) => a.value - b.value)
     })
 
-    res.json({ jeopardyRound, doubleJeopardyRound })
+    const currentPlayers = await Player.findAll({
+      raw: true,
+      attributes: ['id', 'name', 'score'],
+      where: {
+        game_id: gameId,
+      },
+    })
+
+    res.status(200).json({
+      game: { jeopardyRound, doubleJeopardyRound },
+      playerScores: currentPlayers,
+    })
   } catch (error) {
     console.error(error)
     res.status(500).json({ error: 'Database error' })
@@ -159,9 +170,11 @@ app.get('/newGame', async (req, res) => {
     res.json(game_id)
   } catch (error) {
     console.error(error)
-    res.json(
-      getFullJeopardyGame(fallbackJeopardyData, fallbackFinalJeopardyData)
-    )
+    res
+      .status(500)
+      .json(
+        getFullJeopardyGame(fallbackJeopardyData, fallbackFinalJeopardyData)
+      )
   }
 })
 
@@ -173,9 +186,50 @@ app.get('/clueAnswered/:clueId', async (req, res) => {
     res.status(200).json({ message: 'Succesfully updated clue: ' + clueId })
   } catch (error) {
     console.error(error)
-    res.status(200)
+    res.status(500)
   }
 })
+
+app.get('/game/:gameId/playerAdded/:playerName', async (req, res) => {
+  console.log('ACTIVATING GET PLAYERS')
+  const gameId: number = Number(req.params.gameId)
+  const playerName: string = req.params.playerName.toLowerCase()
+  try {
+    console.log('searching')
+    const currentPlayers = await Player.findAll({
+      raw: true,
+      attributes: ['id', 'name', 'score'],
+      where: {
+        game_id: gameId,
+        name: playerName,
+      },
+    })
+    if (currentPlayers[0]) {
+      console.log('found: ', currentPlayers[0])
+      res.status(200).json({ ...currentPlayers[0], newPlayer: false })
+    } else {
+      console.log('player not found, creating')
+      Player.create({
+        name: playerName,
+        game_id: gameId,
+        score: 0,
+      }).then((newPlayer) => {
+        res.status(200).json({ ...newPlayer, newPlayer: true })
+      })
+    }
+
+    console.log('current players in that game:', currentPlayers)
+  } catch (error) {
+    console.error(error)
+    res.status(500)
+  }
+})
+
+// Category.create({
+//   category_name: category.categoryName,
+//   double_jeopardy: true,
+//   game_id,
+// }).then((newCategoryRecord) => {
 
 const PORT = process.env['PORT'] || 8999
 

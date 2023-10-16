@@ -35,7 +35,8 @@ function getJeopardyRound(questions, roundType) {
                 let fakeRound = JSON.parse(rawData.toString());
                 return fakeRound;
             }
-            if (usedCategories.includes(category.categoryName)) {
+            if (usedCategories.includes(category.categoryName) &&
+                category.categoryName !== 'ERROR: FALLBACK DATA') {
                 console.log('duplicate detected', category.categoryName);
                 console.log('array: ', usedCategories);
                 isItADuplicate = true;

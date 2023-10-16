@@ -7,30 +7,30 @@ exports.Clue = exports.Category = exports.Player = exports.Game = exports.sequel
 const sequelize_1 = require("sequelize");
 const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
-// const sequelize = new Sequelize({
-//   logging: false,
-//   dialect: 'mysql',
-//   dialectOptions: {
-//     ssl: { ca: process.env.CERT, rejectUnauthorized: false },
-//   },
-//   host: process.env.HOST,
-//   port: Number(process.env.SERVER_PORT),
-//   username: process.env.USER,
-//   password: process.env.SERVER_PASS,
-//   database: process.env.DATABASE,
-// })
-// Comment this if it's a local db
-//change to nrd to run Sean
 const sequelize = new sequelize_1.Sequelize({
     logging: false,
     dialect: 'mysql',
-    host: 'localhost',
+    dialectOptions: {
+        ssl: { ca: process.env.CERT, rejectUnauthorized: false },
+    },
+    host: process.env.HOST,
     port: 3306,
-    username: 'root',
-    password: 'password',
+    username: process.env.USER,
+    password: process.env.SERVER_PASS,
     database: process.env.DATABASE,
 });
 exports.sequelize = sequelize;
+// Comment this if it's a local db
+//change to nrd to run Sean
+// const sequelize = new Sequelize({
+//   logging: false,
+//   dialect: 'mysql',
+//   host: 'localhost',
+//   port: 3306,
+//   username: 'root',
+//   password: 'password',
+//   database: process.env.DATABASE,
+// })
 // Define the Game model
 const Game = sequelize.define('game', {
     number_of_players: {
