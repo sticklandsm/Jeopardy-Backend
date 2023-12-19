@@ -5,14 +5,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.generateRandom = exports.getFullJeopardyGame = void 0;
 const fs_1 = __importDefault(require("fs"));
-function getFullJeopardyGame(questions, finalJeopardyData) {
+function getFullJeopardyGame(questions) {
     //Get the three rounds:
     const jeopardyRound = getJeopardyRound(questions.data, 'J!');
     const doubleJeopardyRound = getJeopardyRound(questions.data, 'DJ!');
-    //Get the latest clue because it'll probably be hardest
-    finalJeopardyData.sort((a, b) => Date.parse(a.airdate) - Date.parse(b.airdate));
-    const finalJeopardy = finalJeopardyData[finalJeopardyData.length - 1];
-    return { jeopardyRound, doubleJeopardyRound, finalJeopardy };
+    return { jeopardyRound, doubleJeopardyRound };
 }
 exports.getFullJeopardyGame = getFullJeopardyGame;
 function getJeopardyRound(questions, roundType) {

@@ -41,7 +41,6 @@ const http = __importStar(require("http"));
 const ws_1 = __importDefault(require("ws"));
 const helpers_1 = require("./helpers");
 const questions_json_1 = __importDefault(require("../data/questions.json"));
-const finalJeopardy_json_1 = __importDefault(require("../data/finalJeopardy.json"));
 const db_1 = require("./db/db");
 const app = express();
 //initialize a simple http server
@@ -57,7 +56,12 @@ app.get('/game/:gameId', (req, res) => __awaiter(void 0, void 0, void 0, functio
                 game_id: gameId,
             },
         }));
-        const categoriesWithClues = yield Promise.all(currentCategories.map((category) => __awaiter(void 0, void 0, void 0, function* () {
+        console.log('currentCategories', currentCategories);
+        if (!currentCategories[0]) {
+            throw new Error("Couldn't find Game");
+        }
+        console.log('currentCategories', currentCategories);
+        const categoriesWithClues = (yield Promise.all(currentCategories.map((category) => __awaiter(void 0, void 0, void 0, function* () {
             const clues = (yield db_1.Clue.findAll({
                 raw: true,
                 attributes: [
@@ -77,7 +81,7 @@ app.get('/game/:gameId', (req, res) => __awaiter(void 0, void 0, void 0, functio
                 return Object.assign(Object.assign({}, clue), { onScreenCurrently: false });
             });
             return { category, clues: cluesWithOnScreenCurrently };
-        })));
+        })))) || [];
         const jeopardyRound = categoriesWithClues
             .filter((category) => !category.category.double_jeopardy)
             .map((category) => {
@@ -94,11 +98,27 @@ app.get('/game/:gameId', (req, res) => __awaiter(void 0, void 0, void 0, functio
         doubleJeopardyRound.forEach((category) => {
             category.clues.sort((a, b) => a.value - b.value);
         });
-        res.json({ jeopardyRound, doubleJeopardyRound });
+        const currentPlayers = yield db_1.Player.findAll({
+            raw: true,
+            attributes: ['id', 'name', 'score'],
+            where: {
+                game_id: gameId,
+            },
+        });
+        res.status(200).json({
+            game: { jeopardyRound, doubleJeopardyRound },
+            playerScores: currentPlayers,
+        });
     }
     catch (error) {
         console.error(error);
-        res.status(500).json({ error: 'Database error' });
+        res.status(500).json({
+            game: {
+                jeopardyRound: [{ categoryName: 'Error', clues: [] }],
+                doubleJeopardyRound: [],
+                playerScores: [],
+            },
+        });
     }
 }));
 app.get('/newGame', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
@@ -107,8 +127,7 @@ app.get('/newGame', (req, res) => __awaiter(void 0, void 0, void 0, function* ()
         const clueBaseResponse = yield superagent_1.default.get(`cluebase.lukelav.in/clues?limit=500&order_by=id&offset=${randomNum}`
         // `cluebase.lukelav.in/clues?limit=1000&order_by=category&sort=asc&offset=${randomNum}`
         );
-        const jserviceResponse = yield superagent_1.default.get(`http://jservice.io//api/final?count=20`);
-        const fullGame = (0, helpers_1.getFullJeopardyGame)(clueBaseResponse.body, jserviceResponse.body);
+        const fullGame = (0, helpers_1.getFullJeopardyGame)(clueBaseResponse.body);
         const createdGame = yield db_1.Game.bulkCreate([{ number_of_players: 4, status: 'Active' }], { returning: true });
         const game_id = createdGame[0].dataValues.id;
         yield db_1.Player.bulkCreate([{ name: 'Sean', score: 0, game_id }], {
@@ -160,7 +179,7 @@ app.get('/newGame', (req, res) => __awaiter(void 0, void 0, void 0, function* ()
     }
     catch (error) {
         console.error(error);
-        res.json((0, helpers_1.getFullJeopardyGame)(questions_json_1.default, finalJeopardy_json_1.default));
+        res.status(500).json((0, helpers_1.getFullJeopardyGame)(questions_json_1.default));
     }
 }));
 app.get('/clueAnswered/:clueId', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
@@ -172,9 +191,55 @@ app.get('/clueAnswered/:clueId', (req, res) => __awaiter(void 0, void 0, void 0,
     }
     catch (error) {
         console.error(error);
-        res.status(200);
+        res.status(500).json({ error: 'Error in updating clue', message: error });
     }
 }));
+app.get('/game/:gameId/playerAdded/:playerName', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    const gameId = Number(req.params.gameId);
+    const playerName = req.params.playerName.toLowerCase();
+    try {
+        if (!(yield db_1.Game.findByPk(gameId))) {
+            throw new Error('game not found');
+        }
+        console.log('searching');
+        const currentPlayers = yield db_1.Player.findAll({
+            raw: true,
+            attributes: ['id', 'name', 'score'],
+            where: {
+                game_id: gameId,
+                name: playerName,
+            },
+        });
+        if (currentPlayers[0]) {
+            console.log('found: ', currentPlayers[0]);
+            res.status(200).json(Object.assign(Object.assign({}, currentPlayers[0]), { newPlayer: false }));
+        }
+        else {
+            console.log('player not found, creating');
+            db_1.Player.create({
+                name: playerName,
+                game_id: gameId,
+                score: 0,
+            }).then((newPlayer) => {
+                res.status(200).json(Object.assign(Object.assign({}, newPlayer), { newPlayer: true }));
+            });
+        }
+        console.log('current players in that game:', currentPlayers);
+    }
+    catch (error) {
+        console.error('ERROR IN MAKING PLAYER', error);
+        res.status(500).json({
+            newPlayer: { name: 'I am Error', game_id: 0, score: 0 },
+            error: 'Error in making player',
+            message: 'game not found',
+        });
+    }
+}));
+// Category.create({
+//   category_name: category.categoryName,
+//   double_jeopardy: true,
+//   game_id,
+// }).then((newCategoryRecord) => {
 const PORT = process.env['PORT'] || 8999;
 const wsServer = new ws_1.default.Server({ server });
 wsServer.on('connection', (client) => {

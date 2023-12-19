@@ -30,31 +30,36 @@ app.get('/game/:gameId', async (req, res) => {
         game_id: gameId,
       },
     })) as unknown as CategoryWithoutCluesDB[]
+    console.log('currentCategories', currentCategories)
+    if (!currentCategories[0]) {
+      throw new Error("Couldn't find Game")
+    }
+    console.log('currentCategories', currentCategories)
+    const categoriesWithClues =
+      (await Promise.all(
+        currentCategories.map(async (category) => {
+          const clues = (await Clue.findAll({
+            raw: true,
+            attributes: [
+              'id',
+              'clue',
+              'value',
+              'daily_double',
+              'clue',
+              'has_been_answered',
+              'response',
+            ],
+            where: {
+              category_id: category.id,
+            },
+          })) as unknown as Question[]
 
-    const categoriesWithClues = await Promise.all(
-      currentCategories.map(async (category) => {
-        const clues = (await Clue.findAll({
-          raw: true,
-          attributes: [
-            'id',
-            'clue',
-            'value',
-            'daily_double',
-            'clue',
-            'has_been_answered',
-            'response',
-          ],
-          where: {
-            category_id: category.id,
-          },
-        })) as unknown as Question[]
-
-        const cluesWithOnScreenCurrently = clues.map((clue) => {
-          return { ...clue, onScreenCurrently: false }
+          const cluesWithOnScreenCurrently = clues.map((clue) => {
+            return { ...clue, onScreenCurrently: false }
+          })
+          return { category, clues: cluesWithOnScreenCurrently }
         })
-        return { category, clues: cluesWithOnScreenCurrently }
-      })
-    )
+      )) || []
 
     const jeopardyRound = categoriesWithClues
       .filter((category) => !category.category.double_jeopardy)
@@ -78,6 +83,7 @@ app.get('/game/:gameId', async (req, res) => {
 
     const currentPlayers = await Player.findAll({
       raw: true,
+
       attributes: ['id', 'name', 'score'],
       where: {
         game_id: gameId,
@@ -90,7 +96,13 @@ app.get('/game/:gameId', async (req, res) => {
     })
   } catch (error) {
     console.error(error)
-    res.status(500).json({ error: 'Database error' })
+    res.status(500).json({
+      game: {
+        jeopardyRound: [{ categoryName: 'Error', clues: [] }],
+        doubleJeopardyRound: [],
+        playerScores: [],
+      },
+    })
   }
 })
 
@@ -103,14 +115,7 @@ app.get('/newGame', async (req, res) => {
       // `cluebase.lukelav.in/clues?limit=1000&order_by=category&sort=asc&offset=${randomNum}`
     )
 
-    const jserviceResponse = await request.get(
-      `http://jservice.io//api/final?count=20`
-    )
-
-    const fullGame = getFullJeopardyGame(
-      clueBaseResponse.body,
-      jserviceResponse.body
-    )
+    const fullGame = getFullJeopardyGame(clueBaseResponse.body)
 
     const createdGame = await Game.bulkCreate(
       [{ number_of_players: 4, status: 'Active' }],
@@ -170,11 +175,7 @@ app.get('/newGame', async (req, res) => {
     res.json(game_id)
   } catch (error) {
     console.error(error)
-    res
-      .status(500)
-      .json(
-        getFullJeopardyGame(fallbackJeopardyData, fallbackFinalJeopardyData)
-      )
+    res.status(500).json(getFullJeopardyGame(fallbackJeopardyData))
   }
 })
 
@@ -186,15 +187,18 @@ app.get('/clueAnswered/:clueId', async (req, res) => {
     res.status(200).json({ message: 'Succesfully updated clue: ' + clueId })
   } catch (error) {
     console.error(error)
-    res.status(500)
+    res.status(500).json({ error: 'Error in updating clue', message: error })
   }
 })
 
 app.get('/game/:gameId/playerAdded/:playerName', async (req, res) => {
-  console.log('ACTIVATING GET PLAYERS')
   const gameId: number = Number(req.params.gameId)
   const playerName: string = req.params.playerName.toLowerCase()
+
   try {
+    if (!(await Game.findByPk(gameId))) {
+      throw new Error('game not found')
+    }
     console.log('searching')
     const currentPlayers = await Player.findAll({
       raw: true,
@@ -220,8 +224,12 @@ app.get('/game/:gameId/playerAdded/:playerName', async (req, res) => {
 
     console.log('current players in that game:', currentPlayers)
   } catch (error) {
-    console.error(error)
-    res.status(500)
+    console.error('ERROR IN MAKING PLAYER', error)
+    res.status(500).json({
+      newPlayer: { name: 'I am Error', game_id: 0, score: 0 },
+      error: 'Error in making player',
+      message: 'game not found',
+    })
   }
 })
 

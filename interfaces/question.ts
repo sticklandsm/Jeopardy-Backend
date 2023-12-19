@@ -24,7 +24,6 @@ export interface Category {
 export interface FullGame {
   jeopardyRound: Category[]
   doubleJeopardyRound: Category[]
-  finalJeopardy: FinalJeopardy
 }
 
 export interface FinalJeopardy {
@@ -37,8 +36,6 @@ export interface FinalJeopardy {
   }
 }
 
-
-
 export interface CategoryWithoutCluesDB {
   id: number
   category_name: string
@@ -46,7 +43,7 @@ export interface CategoryWithoutCluesDB {
   game_id: number
 }
 
-export interface CategoryDB extends CategoryWithoutCluesDB{
+export interface CategoryDB extends CategoryWithoutCluesDB {
   clues: Question[]
 }
 

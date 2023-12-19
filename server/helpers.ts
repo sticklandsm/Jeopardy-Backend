@@ -7,21 +7,12 @@ import {
 } from '../interfaces/question'
 import fs from 'fs'
 
-export function getFullJeopardyGame(
-  questions: Questions,
-  finalJeopardyData: FinalJeopardy[]
-): FullGame {
+export function getFullJeopardyGame(questions: Questions): FullGame {
   //Get the three rounds:
   const jeopardyRound = getJeopardyRound(questions.data, 'J!')
   const doubleJeopardyRound = getJeopardyRound(questions.data, 'DJ!')
 
-  //Get the latest clue because it'll probably be hardest
-  finalJeopardyData.sort(
-    (a, b) => Date.parse(a.airdate) - Date.parse(b.airdate)
-  )
-  const finalJeopardy = finalJeopardyData[finalJeopardyData.length - 1]
-
-  return { jeopardyRound, doubleJeopardyRound, finalJeopardy }
+  return { jeopardyRound, doubleJeopardyRound }
 }
 
 function getJeopardyRound(
